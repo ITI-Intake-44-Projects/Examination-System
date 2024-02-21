@@ -1,0 +1,17 @@
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\bin\Debug\net8.0-windows\Online-Examination-System.exe
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\bin\Debug\net8.0-windows\Online-Examination-System.deps.json
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\bin\Debug\net8.0-windows\Online-Examination-System.runtimeconfig.json
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\bin\Debug\net8.0-windows\Online-Examination-System.dll
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\bin\Debug\net8.0-windows\Online-Examination-System.pdb
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Form1.resources
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.csproj.GenerateResource.cache
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.AssemblyInfoInputs.cache
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.AssemblyInfo.cs
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.csproj.CoreCompileInputs.cache
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.sourcelink.json
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.dll
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\refint\Online-Examination-System.dll
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.pdb
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.genruntimeconfig.cache
+D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\obj\Debug\net8.0-windows\ref\Online-Examination-System.dll
