@@ -11,10 +11,11 @@ namespace Online_Examination_System.Models
     public class Instructor_Course
     {
         // Composite key: CourseId + InstructorId
-        [Key, Column(Order = 0)]
+
+        [ForeignKey("Course")]
         public int CourseId { get; set; }
 
-        [Key, Column(Order = 1)]
+        [ForeignKey("Instructor")]
         public int InstructorId { get; set; }
 
         // Navigation properties

@@ -24,16 +24,26 @@ namespace Online_Examination_System.Models
         [Range(0, 250)]
         public int? Duration { get; set; }
 
+        [StringLength(20)] 
+        public string? Username { get; set; }
+
+        [MinLength(8)]
+        [StringLength(20)] 
+        public string? Password { get; set; }
+
         // Foreign key property
         [ForeignKey("TrackSupervisor")]
         public int SuperID { get; set; }
 
         // Navigation property for the supervisor
+        // 1:1 Manage
         public virtual Instructor TrackSupervisor { get; set; }
 
         // Navigation property for the many-to-many relationship
-        public virtual List<Track_Course> TrackCourses { get; set; } = new List<Track_Course>();
 
+        public virtual ICollection<Track_Course> TrackCourses { get; set; } = new List<Track_Course>();
+
+        // M:M assign
         public virtual List<Instructor_Track> InstructorTracks { get; set; } = new List<Instructor_Track>();
 
         // Branch_Track property for the many-to-many relationship

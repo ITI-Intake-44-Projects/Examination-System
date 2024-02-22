@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Online_Examination_System.Models;
 
@@ -11,9 +12,11 @@ using Online_Examination_System.Models;
 namespace Online_Examination_System.Migrations
 {
     [DbContext(typeof(OnlineExaminatonSystemContext))]
-    partial class OnlineExaminatonSystemContextModelSnapshot : ModelSnapshot
+    [Migration("20240222182728_v4")]
+    partial class v4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

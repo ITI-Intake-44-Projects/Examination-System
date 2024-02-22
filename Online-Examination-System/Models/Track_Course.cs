@@ -12,16 +12,14 @@ namespace Online_Examination_System.Models
     {
         // Composite key: CourseId + TrackId
 
-        [Key, Column(Order=0)]
+        [ForeignKey("Course")]
         public int CourseId { get; set; }
 
-        [Key, Column(Order=1)]
+        [ForeignKey("Track")]
         public int TrackId { get; set; }
 
         public virtual Track Track { get; set; }
 
         public virtual Course Course { get; set; }
-
-        public virtual ICollection<Track_Course> TrackCourses { get; set; } = new List<Track_Course>();
     }
 }
