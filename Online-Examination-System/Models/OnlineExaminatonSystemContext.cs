@@ -23,6 +23,9 @@ namespace Online_Examination_System.Models
 
         public virtual DbSet<Instructor_Course>? Instructor_Course { get; set; }
 
+        public virtual DbSet<Branch>? Branches { get; set; }
+        public virtual DbSet<Ins_Branch>? Ins_Branch { get; set; }
+        public virtual DbSet<Branch_Track>? Branch_Track { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = "Server=.;Database=OnlineExaminationSystemDB;Trusted_Connection=True;TrustServerCertificate=True";
@@ -90,7 +93,14 @@ namespace Online_Examination_System.Models
 
             // Add other configurations if needed...
 
+            // ins_branch Configuration
+            modelBuilder.Entity<Ins_Branch>().HasKey("Ins_Id", "B_Id");
+
+            modelBuilder.Entity<Branch_Track>().HasKey("B_Id", "Trk_Id");
+
             base.OnModelCreating(modelBuilder);
+
+
         }
 
     }

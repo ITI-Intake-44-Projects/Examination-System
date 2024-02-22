@@ -27,8 +27,11 @@ namespace Online_Examination_System.Models
         public DateTime? Birthdate { get; set; }
 
         // Navigation property for the many-to-many relationship
-        public virtual ICollection<Instructor_Track> InstructorTracks { get; set; } = new List<Instructor_Track>();
+        public virtual List<Instructor_Track> InstructorTracks { get; set; } = new List<Instructor_Track>();
 
-        public virtual ICollection<Instructor_Course> Instructor_Courses { get; set; } = new List<Instructor_Course>();
+        public virtual List<Instructor_Course> Instructor_Courses { get; set; } = new List<Instructor_Course>();
+
+        // ins_branch for the many-to-many relationship
+        public virtual List<Ins_Branch> Ins_Branches { get; set; } = new List<Ins_Branch>();
     }
 }

@@ -32,8 +32,11 @@ namespace Online_Examination_System.Models
         public virtual Instructor TrackSupervisor { get; set; }
 
         // Navigation property for the many-to-many relationship
-        public virtual ICollection<Track_Course> TrackCourses { get; set; } = new List<Track_Course>();
+        public virtual List<Track_Course> TrackCourses { get; set; } = new List<Track_Course>();
 
-        public virtual ICollection<Instructor_Track> InstructorTracks { get; set; } = new List<Instructor_Track>();
+        public virtual List<Instructor_Track> InstructorTracks { get; set; } = new List<Instructor_Track>();
+
+        // Branch_Track property for the many-to-many relationship
+        public virtual List<Branch_Track> Branch_Tracks { get; set; } = new List<Branch_Track>();
     }
 }

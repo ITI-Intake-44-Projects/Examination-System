@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Online_Examination_System.Models;
 
@@ -11,9 +12,11 @@ using Online_Examination_System.Models;
 namespace Online_Examination_System.Migrations
 {
     [DbContext(typeof(OnlineExaminatonSystemContext))]
-    partial class OnlineExaminatonSystemContextModelSnapshot : ModelSnapshot
+    [Migration("20240222080118_v2-koot")]
+    partial class v2koot
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,21 +47,6 @@ namespace Online_Examination_System.Migrations
                     b.HasKey("B_ID");
 
                     b.ToTable("Branches");
-                });
-
-            modelBuilder.Entity("Online_Examination_System.Models.Branch_Track", b =>
-                {
-                    b.Property<int>("B_Id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Trk_Id")
-                        .HasColumnType("int");
-
-                    b.HasKey("B_Id", "Trk_Id");
-
-                    b.HasIndex("Trk_Id");
-
-                    b.ToTable("Branch_Track");
                 });
 
             modelBuilder.Entity("Online_Examination_System.Models.Course", b =>
@@ -231,25 +219,6 @@ namespace Online_Examination_System.Migrations
                     b.ToTable("Track_Course");
                 });
 
-            modelBuilder.Entity("Online_Examination_System.Models.Branch_Track", b =>
-                {
-                    b.HasOne("Online_Examination_System.Models.Branch", "Branch")
-                        .WithMany("Branch_Tracks")
-                        .HasForeignKey("B_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Online_Examination_System.Models.Track", "Track")
-                        .WithMany("Branch_Tracks")
-                        .HasForeignKey("Trk_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Branch");
-
-                    b.Navigation("Track");
-                });
-
             modelBuilder.Entity("Online_Examination_System.Models.Course_Topics", b =>
                 {
                     b.HasOne("Online_Examination_System.Models.Course", "Course")
@@ -354,8 +323,6 @@ namespace Online_Examination_System.Migrations
 
             modelBuilder.Entity("Online_Examination_System.Models.Branch", b =>
                 {
-                    b.Navigation("Branch_Tracks");
-
                     b.Navigation("Ins_Branches");
                 });
 
@@ -379,8 +346,6 @@ namespace Online_Examination_System.Migrations
 
             modelBuilder.Entity("Online_Examination_System.Models.Track", b =>
                 {
-                    b.Navigation("Branch_Tracks");
-
                     b.Navigation("InstructorTracks");
 
                     b.Navigation("TrackCourses");

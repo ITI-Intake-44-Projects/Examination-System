@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Online_Examination_System
-build_property.ProjectDir = D:\ITI\Advanced SQL\Project\Code_First\Online-Examination-System\
+build_property.ProjectDir = D:\ITI\db project\New folder\Online-Examination-System\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
