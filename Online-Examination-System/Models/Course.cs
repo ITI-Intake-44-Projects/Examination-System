@@ -27,5 +27,7 @@ namespace Online_Examination_System.Models
         public virtual ICollection<Instructor_Course> Instructor_Courses { get; set; } = new List<Instructor_Course>();
 
         public virtual ICollection<Course_Topics> CourseTopics { get; set; } = new List<Course_Topics>();
+
+        public virtual List<StudentCourseExam> StudentCourseExam { get; set; } = new List<StudentCourseExam>();
     }
 }

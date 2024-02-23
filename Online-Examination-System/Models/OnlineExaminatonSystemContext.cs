@@ -29,6 +29,20 @@ namespace Online_Examination_System.Models
 
         public virtual DbSet<Branch_Track>? Branch_Track { get; set; }
 
+        public virtual DbSet<Student> Students { get; set; }
+
+        public virtual DbSet<Exam> Exams { get; set; }
+
+        public virtual DbSet<Question> Questions { get; set; }
+
+        public virtual DbSet<QuestionChoice> Ques_Choices { get; set; }
+
+        public virtual DbSet<StudentExamQuestion> Exam_Ques_St { get; set; }
+
+        public virtual DbSet<StudentCourseExam> StudentCourseExam { get; set; }
+
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = "Server=.;Database=OnlineExaminationSystemDB;Trusted_Connection=True;TrustServerCertificate=True";
@@ -53,6 +67,13 @@ namespace Online_Examination_System.Models
 
             modelBuilder.Entity<Branch_Track>()
                 .HasKey("B_Id", "Trk_Id");
+
+            modelBuilder.Entity<QuestionChoice>().HasKey("Ques_id","Choice");
+
+            modelBuilder.Entity<StudentExamQuestion>().HasKey("Ex_id", "Ques_id", "St_id");
+
+            modelBuilder.Entity<StudentCourseExam>().HasKey("St_Id", "Crs_Id", "Exam_Id");
+
         }
 
     }

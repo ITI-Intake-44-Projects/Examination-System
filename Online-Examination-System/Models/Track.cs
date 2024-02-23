@@ -35,6 +35,10 @@ namespace Online_Examination_System.Models
         [ForeignKey("TrackSupervisor")]
         public int SuperID { get; set; }
 
+
+        public virtual List<Student> Students { get; set; } = new List<Student>();
+
+
         // Navigation property for the supervisor
         // 1:1 Manage
         public virtual Instructor TrackSupervisor { get; set; }
