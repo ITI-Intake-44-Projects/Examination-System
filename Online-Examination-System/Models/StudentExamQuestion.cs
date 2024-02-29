@@ -10,6 +10,7 @@ namespace Online_Examination_System.Models
     public class StudentExamQuestion
     {
         [ForeignKey("Exam")]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
 
         public int Ex_id { get; set; }
 
@@ -22,7 +23,7 @@ namespace Online_Examination_System.Models
         public int St_id { get; set; }
 
 
-        public string St_Answer { get; set; }
+        public string? St_Answer { get; set; }
 
         public virtual Student Student { get; set; }
 

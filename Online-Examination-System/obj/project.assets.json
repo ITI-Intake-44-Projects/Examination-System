@@ -4345,19 +4345,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alahram\\.nuget\\packages\\": {}
+    "C:\\Users\\Men3m\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\المنحه\\online examination system\\Online-Examination-System\\Online-Examination-System.csproj",
+      "projectUniqueName": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
       "projectName": "Online-Examination-System",
-      "projectPath": "D:\\المنحه\\online examination system\\Online-Examination-System\\Online-Examination-System.csproj",
-      "packagesPath": "C:\\Users\\Alahram\\.nuget\\packages\\",
-      "outputPath": "D:\\المنحه\\online examination system\\Online-Examination-System\\obj\\",
+      "projectPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
+      "packagesPath": "C:\\Users\\Men3m\\.nuget\\packages\\",
+      "outputPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alahram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Men3m\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4417,7 +4417,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

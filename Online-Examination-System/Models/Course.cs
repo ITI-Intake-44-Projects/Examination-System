@@ -22,6 +22,8 @@ namespace Online_Examination_System.Models
         public int? Grade { get; set; }
 
         // Navigation properties
+        public virtual ICollection<Question> questions { get; set; } = new List<Question>();
+
         public virtual ICollection<Track_Course> TrackCourses { get; set; } = new List<Track_Course>();
 
         public virtual ICollection<Instructor_Course> Instructor_Courses { get; set; } = new List<Instructor_Course>();
