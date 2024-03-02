@@ -1,6 +1,7 @@
 -- =============================================
 -- Author:		<Men3m>
 -- Create date: <27/2/2024>
+-- Stored Name: DeleteExam
 -- =============================================
 
 use OnlineExaminationSystemDB

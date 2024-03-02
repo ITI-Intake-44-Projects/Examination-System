@@ -24,13 +24,6 @@ namespace Online_Examination_System.Models
         [Range(0, 250)]
         public int? Duration { get; set; }
 
-        [StringLength(20)] 
-        public string? Username { get; set; }
-
-        [MinLength(8)]
-        [StringLength(20)] 
-        public string? Password { get; set; }
-
         // Foreign key property
         [ForeignKey("TrackSupervisor")]
         public int SuperID { get; set; }
