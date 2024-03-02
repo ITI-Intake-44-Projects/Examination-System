@@ -17,7 +17,7 @@ namespace Online_Examination_System.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "9.0.0-preview.1.24081.2")
                 .HasAnnotation("Proxies:ChangeTracking", false)
                 .HasAnnotation("Proxies:CheckEquality", false)
                 .HasAnnotation("Proxies:LazyLoading", true)
@@ -103,10 +103,7 @@ namespace Online_Examination_System.Migrations
             modelBuilder.Entity("Online_Examination_System.Models.Exam", b =>
                 {
                     b.Property<int>("Ex_Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Ex_Id"));
 
                     b.Property<int>("Duration")
                         .HasColumnType("int");
@@ -315,6 +312,12 @@ namespace Online_Examination_System.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("Exam_Id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Grade")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Passed")
                         .HasColumnType("int");
 
                     b.HasKey("St_Id", "Crs_Id", "Exam_Id");
