@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace Online_Examination_System.Models
 {
@@ -26,12 +27,12 @@ namespace Online_Examination_System.Models
 
         public DateTime? Birthdate { get; set; }
 
-        [StringLength(20)]
-        public string? Username { get; set; }
+        [StringLength(20)] 
+        public string Username { get; set; }
 
         [MinLength(5)]
         [StringLength(20)]
-        public string? Password { get; set; }
+        public string Password { get; set; }
 
         // Navigation property for the many-to-many relationship
         public virtual List<Instructor_Track> InstructorTracks { get; set; } = new List<Instructor_Track>();

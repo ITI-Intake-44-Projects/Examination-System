@@ -5,32 +5,27 @@
 namespace Online_Examination_System.Migrations
 {
     /// <inheritdoc />
-    public partial class v11 : Migration
+    public partial class v12 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Password",
-                table: "Tracks");
+            migrationBuilder.AlterColumn<int>(
+                name: "Passed",
+                table: "StudentCourseExam",
+                type: "int",
+                nullable: true,
+                oldClrType: typeof(int),
+                oldType: "int");
 
-            migrationBuilder.DropColumn(
-                name: "Username",
-                table: "Tracks");
+            migrationBuilder.AlterColumn<int>(
+                name: "Grade",
+                table: "StudentCourseExam",
+                type: "int",
+                nullable: true,
+                oldClrType: typeof(int),
+                oldType: "int");
 
-            migrationBuilder.AddColumn<string>(
-                name: "Password",
-                table: "Instructors",
-                type: "nvarchar(20)",
-                maxLength: 20,
-                nullable: true);
-
-            migrationBuilder.AddColumn<string>(
-                name: "Username",
-                table: "Instructors",
-                type: "nvarchar(20)",
-                maxLength: 20,
-                nullable: true);
 
             migrationBuilder.Sql(@"
                 create proc [dbo].[examGeneration] @crsName varchar(100), @mcq int, @tf int, @studID int
@@ -166,7 +161,7 @@ namespace Online_Examination_System.Migrations
 				end
 ");
 
-			migrationBuilder.Sql(@"
+            migrationBuilder.Sql(@"
 				create proc UpdateExam
 					@Ex_Id int,
 					@Title nvarchar(50),
@@ -180,7 +175,7 @@ namespace Online_Examination_System.Migrations
 				end;
 			");
 
-			migrationBuilder.Sql(@"
+            migrationBuilder.Sql(@"
 				create proc SelectExamsById @examId int
 				as
 				select * from exams 
@@ -284,27 +279,26 @@ namespace Online_Examination_System.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Password",
-                table: "Instructors");
+            migrationBuilder.AlterColumn<int>(
+                name: "Passed",
+                table: "StudentCourseExam",
+                type: "int",
+                nullable: false,
+                defaultValue: 0,
+                oldClrType: typeof(int),
+                oldType: "int",
+                oldNullable: true);
 
-            migrationBuilder.DropColumn(
-                name: "Username",
-                table: "Instructors");
+            migrationBuilder.AlterColumn<int>(
+                name: "Grade",
+                table: "StudentCourseExam",
+                type: "int",
+                nullable: false,
+                defaultValue: 0,
+                oldClrType: typeof(int),
+                oldType: "int",
+                oldNullable: true);
 
-            migrationBuilder.AddColumn<string>(
-                name: "Password",
-                table: "Tracks",
-                type: "nvarchar(20)",
-                maxLength: 20,
-                nullable: true);
-
-            migrationBuilder.AddColumn<string>(
-                name: "Username",
-                table: "Tracks",
-                type: "nvarchar(20)",
-                maxLength: 20,
-                nullable: true);
 
             migrationBuilder.Sql("DROP PROCEDURE IF EXISTS examGeneration");
             migrationBuilder.Sql("DROP PROCEDURE IF EXISTS examCorrection");

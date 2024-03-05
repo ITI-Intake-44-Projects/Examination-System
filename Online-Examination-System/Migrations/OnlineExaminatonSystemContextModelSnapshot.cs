@@ -163,10 +163,12 @@ namespace Online_Examination_System.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Username")
+                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
@@ -174,6 +176,9 @@ namespace Online_Examination_System.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Ins_ID");
+
+                    b.HasIndex("Username")
+                        .IsUnique();
 
                     b.ToTable("Instructors");
                 });
@@ -289,6 +294,7 @@ namespace Online_Examination_System.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Passowrd")
+                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
@@ -296,12 +302,16 @@ namespace Online_Examination_System.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UserName")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("St_Id");
 
                     b.HasIndex("TrackId");
+
+                    b.HasIndex("UserName")
+                        .IsUnique();
 
                     b.ToTable("Students");
                 });
