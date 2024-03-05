@@ -15,8 +15,7 @@ namespace Online_Examination_System.Migrations
                 name: "Exams",
                 columns: table => new
                 {
-                    Ex_Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Ex_Id = table.Column<int>(type: "int", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Duration = table.Column<int>(type: "int", nullable: false),
                     TotalGrade = table.Column<int>(type: "int", nullable: false)

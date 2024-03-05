@@ -18,6 +18,11 @@ namespace Online_Examination_System.Models
         [ForeignKey("Exam")]
         public int Exam_Id { get; set; }
 
+
+        public int? Grade { get; set; }
+
+        public int? Passed { get; set; }
+
         public virtual Student Student { get; set; }
 
         public virtual Exam Exam { get; set; }
