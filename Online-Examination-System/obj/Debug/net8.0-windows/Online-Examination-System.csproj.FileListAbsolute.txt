@@ -942,3 +942,5 @@ E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Deb
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.pdb
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.genruntimeconfig.cache
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\ref\Online-Examination-System.dll
+E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Exam.resources
+E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.PreviousExams.resources
