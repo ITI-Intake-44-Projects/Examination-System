@@ -12,11 +12,7 @@ using Online_Examination_System.Models;
 namespace Online_Examination_System.Migrations
 {
     [DbContext(typeof(OnlineExaminatonSystemContext))]
-<<<<<<<< HEAD:Online-Examination-System/Migrations/20240304202057_v11.Designer.cs
-    [Migration("20240304202057_v11")]
-========
     [Migration("20240302214206_v11")]
->>>>>>>> 62e3df794093d8d713ee7009972ae946a1cf491a:Online-Examination-System/Migrations/20240302214206_v11.Designer.cs
     partial class v11
     {
         /// <inheritdoc />

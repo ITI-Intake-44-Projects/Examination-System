@@ -48,10 +48,10 @@ namespace Online_Examination_System
 
         private void prevExamsBtn_Click(object sender, EventArgs e)
         {
-            PreviousExams previousExams = new PreviousExams(student, db);
-            this.Hide();
-            previousExams.FormClosed += (obj, args) => this.Close(); ;
-            previousExams.Show();
+            //PreviousExams previousExams = new PreviousExams(student, db);
+            //this.Hide();
+            //previousExams.FormClosed += (obj, args) => this.Close(); ;
+            //previousExams.Show();
         }
 
         private void requestExamBtn_Click(object sender, EventArgs e)
