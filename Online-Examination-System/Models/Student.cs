@@ -36,10 +36,10 @@ namespace Online_Examination_System.Models
         public string? Gender { get; set; }
 
         [StringLength(50)]
-        public string? UserName { get; set; }
+        public string UserName { get; set; }
 
         [StringLength(20)]
-        public string? Passowrd { get; set; }
+        public string Passowrd { get; set; }
 
         [ForeignKey("Track")]
         public int TrackId {  get; set; }

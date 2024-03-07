@@ -68,12 +68,22 @@ namespace Online_Examination_System.Models
             modelBuilder.Entity<Branch_Track>()
                 .HasKey("B_Id", "Trk_Id");
 
-            modelBuilder.Entity<QuestionChoice>().HasKey("Ques_id","Choice");
+            modelBuilder.Entity<QuestionChoice>()
+                .HasKey("Ques_id","Choice");
 
-            modelBuilder.Entity<StudentExamQuestion>().HasKey("Ex_id", "Ques_id", "St_id");
+            modelBuilder.Entity<StudentExamQuestion>()
+                .HasKey("Ex_id", "Ques_id", "St_id");
 
-            modelBuilder.Entity<StudentCourseExam>().HasKey("St_Id", "Crs_Id", "Exam_Id");
+            modelBuilder.Entity<StudentCourseExam>()
+                .HasKey("St_Id", "Crs_Id", "Exam_Id");
 
+            modelBuilder.Entity<Student>()
+                .HasIndex(std => std.UserName)
+                .IsUnique();
+
+            modelBuilder.Entity<Instructor>()
+                .HasIndex(ins => ins.Username)
+                .IsUnique();
         }
 
     }

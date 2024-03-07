@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\Online-Examination-System.csproj": {}
+    "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj": {}
   },
   "projects": {
-    "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\Online-Examination-System.csproj": {
+    "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\Online-Examination-System.csproj",
+        "projectUniqueName": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
         "projectName": "Online-Examination-System",
-        "projectPath": "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\Online-Examination-System.csproj",
-        "packagesPath": "C:\\Users\\yfrou\\.nuget\\packages\\",
-        "outputPath": "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\obj\\",
+        "projectPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
+        "packagesPath": "C:\\Users\\Men3m\\.nuget\\packages\\",
+        "outputPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yfrou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Men3m\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -80,7 +85,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
