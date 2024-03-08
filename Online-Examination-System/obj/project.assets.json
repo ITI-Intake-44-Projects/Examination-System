@@ -4358,19 +4358,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Men3m\\.nuget\\packages\\": {}
+    "C:\\Users\\Tota\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
+      "projectUniqueName": "D:\\ITI\\db project\\7\\Online-Examination-System\\Online-Examination-System\\Online-Examination-System.csproj",
       "projectName": "Online-Examination-System",
-      "projectPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
-      "packagesPath": "C:\\Users\\Men3m\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\obj\\",
+      "projectPath": "D:\\ITI\\db project\\7\\Online-Examination-System\\Online-Examination-System\\Online-Examination-System.csproj",
+      "packagesPath": "C:\\Users\\Tota\\.nuget\\packages\\",
+      "outputPath": "D:\\ITI\\db project\\7\\Online-Examination-System\\Online-Examination-System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Men3m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tota\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4390,11 +4390,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4435,16 +4430,8 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
