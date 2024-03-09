@@ -153,3 +153,6 @@ D:\ITI\db project\7\Online-Examination-System\Online-Examination-System\obj\Debu
 D:\ITI\db project\7\Online-Examination-System\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.pdb
 D:\ITI\db project\7\Online-Examination-System\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.genruntimeconfig.cache
 D:\ITI\db project\7\Online-Examination-System\Online-Examination-System\obj\Debug\net8.0-windows\ref\Online-Examination-System.dll
+D:\ITI\db project\7\Online-Examination-System\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.insProfile.resources
+D:\ITI\db project\7\Online-Examination-System\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.insCourses.resources
+D:\ITI\db project\7\Online-Examination-System\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.insQuestions.resources
