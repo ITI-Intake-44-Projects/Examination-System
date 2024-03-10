@@ -32,15 +32,14 @@ namespace Online_Examination_System.Migrations
                 as
                 begin
 
-	                declare @t table(quesId int, question varchar(100), choice varchar(100), marks int)
+	                declare @t table(quesId int, question varchar(Max), choice varchar(Max), marks int)
 
-	                declare @t_ids table(quesId int, question varchar(100), marks int)
+	                declare @t_ids table(quesId int, question varchar(Max), marks int)
 	
 	                declare @examID int
 	                select @examID = count(*)+1
 	                from Exams
 	
-	                -- InsertExam @examID, 'course exam', 3, 100
 	                insert into Exams values (@examID, @crsName, 3, 100)
 
 	                -- crs id
@@ -65,7 +64,6 @@ namespace Online_Examination_System.Migrations
 	                order by NEWID()
 
 
-	                --select * from @t_ids
                     insert into @t
                     select tt.quesId, tt.question, qch.Choice, tt.marks
                     from @t_ids tt inner join Ques_Choices qch
@@ -87,7 +85,6 @@ namespace Online_Examination_System.Migrations
                     FROM RankedData
                     WHERE Rank <= 10;
 
-	                select * from @t order by quesId
                 end
             ");
 
@@ -120,20 +117,20 @@ namespace Online_Examination_System.Migrations
 	                if(@grade >= 60)
 		                update StudentCourseExam 
 		                set grade = @grade, passed = 1
+						where Exam_Id = @examId
 	                else 
 		                update StudentCourseExam 
 		                set grade = @grade, passed = 0
-
-	                select @grade
+						where Exam_Id = @examId
 
                 end");
 
             migrationBuilder.Sql(@"
-				create proc examAnswers 
-					@crsName varchar(100), @username varchar(100), @ans1 varchar(100),
-					@ans2 varchar(100), @ans3 varchar(100), @ans4 varchar(100),
-					@ans5 varchar(100), @ans6 varchar(100), @ans7 varchar(100),
-					@ans8 varchar(100), @ans9 varchar(100), @ans10 varchar(100)
+				create proc [dbo].[examAnswers] 
+				@crsName varchar(100), @username varchar(100), @ans1 varchar(100),
+				@ans2 varchar(100), @ans3 varchar(100), @ans4 varchar(100),
+				@ans5 varchar(100), @ans6 varchar(100), @ans7 varchar(100),
+				@ans8 varchar(100), @ans9 varchar(100), @ans10 varchar(100)
 				as
 				begin
 					declare @crsID int
@@ -151,15 +148,46 @@ namespace Online_Examination_System.Migrations
 					from  StudentCourseExam ecs
 					where ecs.St_Id = @stdID and ecs.Crs_Id = @crsID
 
-					declare @t table(answer int, exID int)
-					insert into @t values (@ans1, @exmID), (@ans2, @exmID),(@ans3, @exmID),(@ans4, @exmID),(@ans5, @exmID), (@ans6, @exmID), (@ans7, @exmID),(@ans8, @exmID),(@ans9, @exmID),(@ans10, @exmID)
+					declare @t table(answer varchar(100), qsID int)
 
-					update eqs
-					set eqs.St_Answer = t.answer
-					from Exam_Ques_St eqs JOIN @t t 
-						on eqs.Ex_id = t.exID
+					insert into @t (qsID, answer)
+					select q.Ques_id, 
+					case
+						when rowNumber = 1 
+						then @ans1
+						when rowNumber = 2
+						then @ans2
+						when rowNumber = 3
+						then @ans3
+						when rowNumber = 4
+						then @ans4
+						when rowNumber = 5
+						then @ans5
+						when rowNumber = 6
+						then @ans6
+						when rowNumber = 7
+						then @ans7
+						when rowNumber = 8
+						then @ans8
+						when rowNumber = 9
+						then @ans9
+						when rowNumber = 10
+						then @ans10
+					end as ansVariable
+
+					from (
+						select eqs.Ques_id, ROW_NUMBER() over (order by ques_id) as rowNumber
+						from Exam_Ques_St eqs
+						where Ex_id = @exmID
+					) as q
+
+					update Exam_Ques_St
+					set St_Answer = t.answer
+					from Exam_Ques_St eqs inner join @t t
+						on eqs.Ques_id = t.qsID
+					where eqs.Ex_id = @exmID
 				end
-");
+			");
 
             migrationBuilder.Sql(@"
 				create proc UpdateExam

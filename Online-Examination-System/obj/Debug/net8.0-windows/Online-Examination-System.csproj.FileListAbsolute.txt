@@ -287,3 +287,6 @@ E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Deb
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.StudentCourses.resources
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.studentDashboard.resources
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.supervisorDashboard.resources
+E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.insCourses.resources
+E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.insProfile.resources
+E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.insQuestions.resources
