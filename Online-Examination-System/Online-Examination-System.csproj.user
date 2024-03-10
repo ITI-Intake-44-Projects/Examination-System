@@ -4,6 +4,15 @@
     <Compile Update="CompleteSignUpAsStudent.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="insCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="insProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="insQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Exam.cs">
       <SubType>Form</SubType>
     </Compile>
