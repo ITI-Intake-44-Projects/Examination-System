@@ -34,8 +34,5 @@
     <Compile Update="supervisorDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="trash.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

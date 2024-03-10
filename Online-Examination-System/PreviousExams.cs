@@ -15,14 +15,18 @@ namespace Online_Examination_System
     public partial class PreviousExams : Form
     {
         OnlineExaminatonSystemContext context = new OnlineExaminatonSystemContext();
-        public PreviousExams()
+        Student st;
+        
+        public PreviousExams(Student _st, OnlineExaminatonSystemContext _context)
         {
             InitializeComponent();
+            st = _st;
+           context = _context;
         }
 
         private void PreviousExams_Load(object sender, EventArgs e)
         {
-            var exams = context.StudentCourseExam.Where(s=> s.St_Id == 1).ToList();
+            var exams = context.StudentCourseExam.Where(s=> s.St_Id == st.St_Id).ToList();
             int y = 50;
             int x = 50;
             foreach (var exam in exams) 
@@ -42,7 +46,7 @@ namespace Online_Examination_System
                 //CourseName.Location = new Point(10, 10);
                 p.Controls.Add(CourseName);
 
-                y += p.Height + 30;
+                y += p.Height + 20;
             }
 
         }

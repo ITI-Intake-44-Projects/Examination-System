@@ -34,6 +34,7 @@
             prevExamsBtn = new Button();
             logoutBtn = new Button();
             label1 = new Label();
+            courses_box = new ComboBox();
             SuspendLayout();
             // 
             // profileBtn
@@ -83,7 +84,7 @@
             // logoutBtn
             // 
             logoutBtn.Font = new Font("Segoe UI", 9F);
-            logoutBtn.Location = new Point(91, 168);
+            logoutBtn.Location = new Point(209, 166);
             logoutBtn.Name = "logoutBtn";
             logoutBtn.Size = new Size(105, 25);
             logoutBtn.TabIndex = 4;
@@ -95,17 +96,27 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Georgia", 15F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(56, 27);
+            label1.Location = new Point(159, 21);
             label1.Name = "label1";
             label1.Size = new Size(186, 24);
             label1.TabIndex = 5;
             label1.Text = "Student Dashboard";
             // 
+            // courses_box
+            // 
+            courses_box.FormattingEnabled = true;
+            courses_box.Location = new Point(309, 79);
+            courses_box.Name = "courses_box";
+            courses_box.Size = new Size(121, 23);
+            courses_box.TabIndex = 6;
+            courses_box.Text = "     Choose Course";
+            // 
             // studentDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(297, 205);
+            ClientSize = new Size(491, 212);
+            Controls.Add(courses_box);
             Controls.Add(label1);
             Controls.Add(logoutBtn);
             Controls.Add(prevExamsBtn);
@@ -115,6 +126,7 @@
             Name = "studentDashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "studentDashboard";
+            Load += studentDashboard_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -127,5 +139,6 @@
         private Button prevExamsBtn;
         private Button logoutBtn;
         private Label label1;
+        private ComboBox courses_box;
     }
 }

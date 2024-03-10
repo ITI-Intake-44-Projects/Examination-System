@@ -28,18 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            generate = new Button();
             SuspendLayout();
-            // 
-            // generate
-            // 
-            generate.Location = new Point(465, 29);
-            generate.Name = "generate";
-            generate.Size = new Size(176, 47);
-            generate.TabIndex = 2;
-            generate.Text = "RequestExam";
-            generate.UseVisualStyleBackColor = true;
-            generate.Click += generate_Click;
             // 
             // Exam
             // 
@@ -48,14 +37,13 @@
             AutoScroll = true;
             BackColor = SystemColors.Window;
             ClientSize = new Size(1185, 763);
-            Controls.Add(generate);
             Name = "Exam";
             Padding = new Padding(10);
             Text = "Exam";
+            Load += Exam_Load;
             ResumeLayout(false);
         }
 
         #endregion
-        private Button generate;
     }
 }
