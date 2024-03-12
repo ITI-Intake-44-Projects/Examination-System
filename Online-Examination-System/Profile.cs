@@ -21,5 +21,19 @@ namespace Online_Examination_System
             student = _student;
             db = _db;
         }
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+            name.Text = $"Name: {student.Fname} {student.Lname} ";
+            username.Text = $"UserName: {student.UserName}";
+            pass.Text = $"Password: {student.Passowrd}";
+            gender.Text = $"Gender: {student.Gender}";
+            date.Text = $"BirthDate: {student.BirthDate.Value.Year}-{student.BirthDate.Value.Month}-{student.BirthDate.Value.Day}";
+            track.Text = $"Track: {student.Track.Name}";
+            faculty.Text = $"Faculty: {student.Faculty}";
+            mobile.Text = $"Mobile: {student.Mobile}";
+            address.Text = $"Adress: {student.Address}";
+
+        }
     }
 }

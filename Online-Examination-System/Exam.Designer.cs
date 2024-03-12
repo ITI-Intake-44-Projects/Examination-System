@@ -1,6 +1,6 @@
 ﻿namespace Online_Examination_System
 {
-    partial class PreviousExams
+    partial class Exam
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,17 @@
         {
             SuspendLayout();
             // 
-            // PreviousExams
+            // Exam
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = SystemColors.Window;
-            ClientSize = new Size(882, 565);
-            Name = "PreviousExams";
-            Text = "PreviousExams";
-            Load += PreviousExams_Load;
+            ClientSize = new Size(1185, 763);
+            Name = "Exam";
+            Padding = new Padding(10);
+            Text = "Exam";
+            Load += Exam_Load;
             ResumeLayout(false);
         }
 

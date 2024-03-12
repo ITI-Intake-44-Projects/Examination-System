@@ -6,4 +6,7 @@
 *.gitignore
 /.vs/Online-Examination-System/FileContentIndex/7a03c505-0830-42b1-858b-150728acac85.vsidx
 /.gitignore
-.vs/
+/.gitignore
+/.gitignore
+/Online-Examination-System/obj/Debug/net8.0-windows/Online-Examination-System.AssemblyInfo.cs
+/Online-Examination-System/obj/Debug/net8.0-windows/Online-Examination-System.AssemblyInfoInputs.cache
