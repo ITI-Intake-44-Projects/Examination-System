@@ -345,3 +345,4 @@ D:\المنحه\V5\Online-Examination-System\obj\Debug\net8.0-windows\Online_Exa
 D:\المنحه\V5\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Form5.resources
 D:\المنحه\V5\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Form6.resources
 D:\المنحه\V5\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.ViewReports.resources
+D:\المنحه\V5\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Exam.resources
