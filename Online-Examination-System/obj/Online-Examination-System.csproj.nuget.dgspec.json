@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ITI\\db project\\7\\Online-Examination-System\\Online-Examination-System\\Online-Examination-System.csproj": {}
+    "D:\\المنحه\\V5\\Online-Examination-System\\Online-Examination-System.csproj": {}
   },
   "projects": {
-    "D:\\ITI\\db project\\7\\Online-Examination-System\\Online-Examination-System\\Online-Examination-System.csproj": {
+    "D:\\المنحه\\V5\\Online-Examination-System\\Online-Examination-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITI\\db project\\7\\Online-Examination-System\\Online-Examination-System\\Online-Examination-System.csproj",
+        "projectUniqueName": "D:\\المنحه\\V5\\Online-Examination-System\\Online-Examination-System.csproj",
         "projectName": "Online-Examination-System",
-        "projectPath": "D:\\ITI\\db project\\7\\Online-Examination-System\\Online-Examination-System\\Online-Examination-System.csproj",
-        "packagesPath": "C:\\Users\\Tota\\.nuget\\packages\\",
-        "outputPath": "D:\\ITI\\db project\\7\\Online-Examination-System\\Online-Examination-System\\obj\\",
+        "projectPath": "D:\\المنحه\\V5\\Online-Examination-System\\Online-Examination-System.csproj",
+        "packagesPath": "C:\\Users\\Alahram\\.nuget\\packages\\",
+        "outputPath": "D:\\المنحه\\V5\\Online-Examination-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tota\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alahram\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
               "version": "[9.0.0-preview.1.24081.2, )"
@@ -53,6 +57,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "ReportViewerCore.WinForms": {
+              "target": "Package",
+              "version": "[15.1.19, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [
@@ -74,7 +86,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
