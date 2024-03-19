@@ -44,6 +44,7 @@
             updateBtn = new Button();
             deleteBtn = new Button();
             button4 = new Button();
+            btnInsChoices = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -162,49 +163,65 @@
             // 
             // insertBtn
             // 
+            insertBtn.BackColor = Color.FromArgb(128, 255, 128);
             insertBtn.Location = new Point(116, 124);
             insertBtn.Name = "insertBtn";
             insertBtn.Size = new Size(75, 23);
             insertBtn.TabIndex = 26;
             insertBtn.Text = "Insert";
-            insertBtn.UseVisualStyleBackColor = true;
+            insertBtn.UseVisualStyleBackColor = false;
             insertBtn.Click += insertBtn_Click;
             // 
             // updateBtn
             // 
+            updateBtn.BackColor = Color.FromArgb(128, 128, 255);
             updateBtn.Location = new Point(241, 124);
             updateBtn.Name = "updateBtn";
             updateBtn.Size = new Size(75, 23);
             updateBtn.TabIndex = 27;
             updateBtn.Text = "Update";
-            updateBtn.UseVisualStyleBackColor = true;
+            updateBtn.UseVisualStyleBackColor = false;
             updateBtn.Click += updateBtn_Click;
             // 
             // deleteBtn
             // 
+            deleteBtn.BackColor = Color.FromArgb(255, 128, 128);
             deleteBtn.Location = new Point(372, 124);
             deleteBtn.Name = "deleteBtn";
             deleteBtn.Size = new Size(75, 23);
             deleteBtn.TabIndex = 28;
             deleteBtn.Text = "Delete";
-            deleteBtn.UseVisualStyleBackColor = true;
+            deleteBtn.UseVisualStyleBackColor = false;
             deleteBtn.Click += deleteBtn_Click;
             // 
             // button4
             // 
+            button4.BackColor = Color.Silver;
             button4.Location = new Point(492, 124);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 29;
             button4.Text = "Clear";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
+            // 
+            // btnInsChoices
+            // 
+            btnInsChoices.BackColor = Color.FromArgb(255, 128, 255);
+            btnInsChoices.Location = new Point(599, 123);
+            btnInsChoices.Name = "btnInsChoices";
+            btnInsChoices.Size = new Size(111, 23);
+            btnInsChoices.TabIndex = 30;
+            btnInsChoices.Text = "Insert Choices";
+            btnInsChoices.UseVisualStyleBackColor = false;
+            btnInsChoices.Click += btnInsChoices_Click;
             // 
             // insQuestions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnInsChoices);
             Controls.Add(button4);
             Controls.Add(deleteBtn);
             Controls.Add(updateBtn);
@@ -246,5 +263,6 @@
         private Button updateBtn;
         private Button deleteBtn;
         private Button button4;
+        private Button btnInsChoices;
     }
 }
