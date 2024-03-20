@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\المنحه\\V5\\Online-Examination-System\\Online-Examination-System.csproj": {}
+    "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\Online-Examination-System.csproj": {}
   },
   "projects": {
-    "D:\\المنحه\\V5\\Online-Examination-System\\Online-Examination-System.csproj": {
+    "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\Online-Examination-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\المنحه\\V5\\Online-Examination-System\\Online-Examination-System.csproj",
+        "projectUniqueName": "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\Online-Examination-System.csproj",
         "projectName": "Online-Examination-System",
-        "projectPath": "D:\\المنحه\\V5\\Online-Examination-System\\Online-Examination-System.csproj",
-        "packagesPath": "C:\\Users\\Alahram\\.nuget\\packages\\",
-        "outputPath": "D:\\المنحه\\V5\\Online-Examination-System\\obj\\",
+        "projectPath": "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\Online-Examination-System.csproj",
+        "packagesPath": "C:\\Users\\yfrou\\.nuget\\packages\\",
+        "outputPath": "E:\\ITI 9m\\ADV SQLSERVER\\Project\\FinalProjectV2\\Online-Examination-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alahram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yfrou\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -12,7 +12,7 @@ namespace Online_Examination_System.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int Ex_Id { get; set; }
+        public int Ex_Id { get; set;}
 
         [StringLength(50)]
         public string Title { get; set; }

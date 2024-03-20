@@ -28,7 +28,7 @@ namespace Online_Examination_System
         {
             try
             {
-                SqlCommand command = new SqlCommand("GetCourseTopics", con);
+                SqlCommand command = new SqlCommand("GetCourseTopicsReport", con);
                 command.CommandType = CommandType.StoredProcedure;
                 command.Parameters.AddWithValue("@Crs_ID", textBox1.Text);
 
@@ -41,7 +41,7 @@ namespace Online_Examination_System
                 d.Fill(dt);
                 reportViewer1.LocalReport.DataSources.Clear();
                 ReportDataSource source = new ReportDataSource("DataSet2", dt);
-                reportViewer1.LocalReport.ReportPath = "D:\\المنحه\\V5\\Online-Examination-System\\ReportDefintions\\Report2.rdlc";
+                reportViewer1.LocalReport.ReportPath = "./ReportDefintions/Report2.rdlc";
                 reportViewer1.LocalReport.DataSources.Add(source);
                 reportViewer1.RefreshReport();
             }

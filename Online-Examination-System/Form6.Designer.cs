@@ -40,33 +40,36 @@ namespace Online_Examination_System
             // reportViewer1
             // 
             reportViewer1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            reportViewer1.Location = new Point(0, 100);
+            reportViewer1.Location = new Point(0, 75);
+            reportViewer1.Margin = new Padding(3, 2, 3, 2);
             reportViewer1.Name = "ReportViewer";
             reportViewer1.ServerReport.BearerToken = null;
-            reportViewer1.Size = new Size(800, 300);
+            reportViewer1.Size = new Size(700, 245);
             reportViewer1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(208, 24);
+            label1.Location = new Point(182, 18);
             label1.Name = "label1";
-            label1.Size = new Size(62, 20);
+            label1.Size = new Size(48, 15);
             label1.TabIndex = 1;
             label1.Text = "Track ID";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(313, 24);
+            textBox1.Location = new Point(274, 18);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(110, 23);
             textBox1.TabIndex = 3;
             // 
             // button1
             // 
-            button1.Location = new Point(453, 24);
+            button1.Location = new Point(396, 18);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 22);
             button1.TabIndex = 5;
             button1.Text = "show";
             button1.UseVisualStyleBackColor = true;
@@ -74,13 +77,14 @@ namespace Online_Examination_System
             // 
             // Form6
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 357);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(reportViewer1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form6";
             Text = "Form1";
             Load += Form4_Load;
