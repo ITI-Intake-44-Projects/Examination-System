@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "PreviousExams";
+            SuspendLayout();
+            // 
+            // PreviousExams
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Window;
+            ClientSize = new Size(882, 565);
+            Name = "PreviousExams";
+            Text = "PreviousExams";
+            Load += PreviousExams_Load;
+            ResumeLayout(false);
         }
 
         #endregion

@@ -63,10 +63,10 @@ namespace Online_Examination_System
                     {
                         MessageBox.Show($"Welcome back {supervisor.TrackSupervisor.Username} :)", "Login done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         username_txt.Text = password_txt.Text = "";
-                        supervisorDashboard supervisorDashboard = new supervisorDashboard(supervisor, db);
+                        ViewReports ViewReports = new ViewReports();
                         this.Hide();
-                        supervisorDashboard.FormClosed += (obj, args) => this.Close(); ;
-                        supervisorDashboard.Show();
+                        ViewReports.FormClosed += (obj, args) => this.Close(); ;
+                        ViewReports.Show();
                     }
                     else
                     {
