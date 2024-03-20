@@ -89,7 +89,7 @@ namespace Online_Examination_System
                     {
                         MessageBox.Show($"Welcome back {student.UserName} :)", "Login done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         username_txt.Text = password_txt.Text = "";
-                        studentDashboard studentDashboard = new studentDashboard(student, db);
+                        StudentNavigationArea studentDashboard = new StudentNavigationArea(student, db);
                         this.Hide();
                         studentDashboard.FormClosed += (obj, args) => this.Close(); ;
                         studentDashboard.Show();
@@ -115,6 +115,16 @@ namespace Online_Examination_System
             signUp.Show();
         }
 
-        private void student_rbtn_CheckedChanged(object sender, EventArgs e){} // ×××× 
+        private void student_rbtn_CheckedChanged(object sender, EventArgs e) { } // ×××× 
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            Login_btn.BackColor = Color.FromArgb(52, 152, 219);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

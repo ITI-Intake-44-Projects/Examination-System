@@ -21,6 +21,8 @@ namespace Online_Examination_System
 
         private void SignUp_Load(object sender, EventArgs e)
         {
+            nextBtn.BackColor = Color.FromArgb(92, 184, 92);
+            backBtn.BackColor = Color.FromArgb(52, 152, 219);
             List<string> roles = new List<string> { "Choose your role", "Student", "Instructor" };
             role_cb.DataSource = roles;
         }
@@ -41,7 +43,8 @@ namespace Online_Examination_System
                 {
                     if (person.role == "Student")
                     {
-                        Student student = new Student {
+                        Student student = new Student
+                        {
                             Fname = person.firstname,
                             Lname = person.lastname,
                             UserName = person.username,
@@ -52,9 +55,10 @@ namespace Online_Examination_System
                         CompleteSignUpAsStudent signUpAsStudent = new CompleteSignUpAsStudent(student);
                         CloseAndShowForm(signUpAsStudent);
                     }
-                    else 
+                    else
                     {
-                        Instructor instructor = new Instructor {
+                        Instructor instructor = new Instructor
+                        {
                             FName = person.firstname,
                             LName = person.lastname,
                             Username = person.username,
@@ -83,7 +87,7 @@ namespace Online_Examination_System
                     MessageBox.Show("sign up as soon as possible :)", "sign up failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            
+
             else
             {
                 var result = MessageBox.Show("please fill all data", "sign up interupted", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
@@ -107,8 +111,8 @@ namespace Online_Examination_System
 
         private bool validateData(Person person)
         {
-            return (firstname_txt.Text != "" && lastname_txt.Text != "" && username_txt.Text != "" && 
-                    address_txt.Text != "" && password_txt.Text != "" && role_cb.SelectedIndex != 0 && 
+            return (firstname_txt.Text != "" && lastname_txt.Text != "" && username_txt.Text != "" &&
+                    address_txt.Text != "" && password_txt.Text != "" && role_cb.SelectedIndex != 0 &&
                     datePicker.Value != null);
         }
 
@@ -119,6 +123,11 @@ namespace Online_Examination_System
             formToShow.Show();
         }
         #endregion
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Person
     {

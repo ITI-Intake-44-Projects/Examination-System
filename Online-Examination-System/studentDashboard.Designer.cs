@@ -42,7 +42,7 @@
             profileBtn.Font = new Font("Segoe UI", 9F);
             profileBtn.Location = new Point(25, 79);
             profileBtn.Name = "profileBtn";
-            profileBtn.Size = new Size(105, 25);
+            profileBtn.Size = new Size(118, 25);
             profileBtn.TabIndex = 0;
             profileBtn.Text = "My Profile";
             profileBtn.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@
             // requestExamBtn
             // 
             requestExamBtn.Font = new Font("Segoe UI", 9F);
-            requestExamBtn.Location = new Point(159, 79);
+            requestExamBtn.Location = new Point(25, 128);
             requestExamBtn.Name = "requestExamBtn";
             requestExamBtn.Size = new Size(118, 25);
             requestExamBtn.TabIndex = 1;
@@ -62,9 +62,9 @@
             // coursesBtn
             // 
             coursesBtn.Font = new Font("Segoe UI", 9F);
-            coursesBtn.Location = new Point(25, 122);
+            coursesBtn.Location = new Point(175, 79);
             coursesBtn.Name = "coursesBtn";
-            coursesBtn.Size = new Size(105, 25);
+            coursesBtn.Size = new Size(121, 25);
             coursesBtn.TabIndex = 2;
             coursesBtn.Text = "My Courses";
             coursesBtn.UseVisualStyleBackColor = true;
@@ -73,7 +73,7 @@
             // prevExamsBtn
             // 
             prevExamsBtn.Font = new Font("Segoe UI", 9F);
-            prevExamsBtn.Location = new Point(159, 122);
+            prevExamsBtn.Location = new Point(25, 175);
             prevExamsBtn.Name = "prevExamsBtn";
             prevExamsBtn.Size = new Size(118, 25);
             prevExamsBtn.TabIndex = 3;
@@ -84,9 +84,9 @@
             // logoutBtn
             // 
             logoutBtn.Font = new Font("Segoe UI", 9F);
-            logoutBtn.Location = new Point(209, 166);
+            logoutBtn.Location = new Point(175, 175);
             logoutBtn.Name = "logoutBtn";
-            logoutBtn.Size = new Size(105, 25);
+            logoutBtn.Size = new Size(121, 25);
             logoutBtn.TabIndex = 4;
             logoutBtn.Text = "Logout";
             logoutBtn.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Georgia", 15F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(159, 21);
+            label1.Location = new Point(72, 22);
             label1.Name = "label1";
             label1.Size = new Size(186, 24);
             label1.TabIndex = 5;
@@ -105,7 +105,7 @@
             // courses_box
             // 
             courses_box.FormattingEnabled = true;
-            courses_box.Location = new Point(309, 79);
+            courses_box.Location = new Point(175, 128);
             courses_box.Name = "courses_box";
             courses_box.Size = new Size(121, 23);
             courses_box.TabIndex = 6;
@@ -115,7 +115,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(491, 212);
+            BackgroundImage = Properties.Resources.bkg;
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(342, 250);
             Controls.Add(courses_box);
             Controls.Add(label1);
             Controls.Add(logoutBtn);
@@ -123,6 +125,7 @@
             Controls.Add(coursesBtn);
             Controls.Add(requestExamBtn);
             Controls.Add(profileBtn);
+            DoubleBuffered = true;
             Name = "studentDashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "studentDashboard";
