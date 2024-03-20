@@ -23,8 +23,6 @@ namespace Online_Examination_System
             instructor = _instructor;
             loadDropDownListData();
         }
-
-
         public void loadDropDownListData()
         {
             int instructorId = instructor.Ins_ID;

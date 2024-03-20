@@ -47,6 +47,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Arial", 11.25F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(24, 76);
             label2.Name = "label2";
             label2.Size = new Size(77, 18);
@@ -59,6 +60,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(21, 35);
             label1.Name = "label1";
             label1.Size = new Size(80, 18);
@@ -85,7 +87,10 @@
             // Login_btn
             // 
             Login_btn.BackColor = Color.Transparent;
+            Login_btn.FlatAppearance.BorderSize = 0;
+            Login_btn.FlatStyle = FlatStyle.Flat;
             Login_btn.Font = new Font("Arial", 12.25F, FontStyle.Bold);
+            Login_btn.ForeColor = Color.White;
             Login_btn.Location = new Point(124, 235);
             Login_btn.Name = "Login_btn";
             Login_btn.Size = new Size(90, 30);
@@ -99,6 +104,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Arial", 11.25F, FontStyle.Bold);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(40, 158);
             label3.Name = "label3";
             label3.Size = new Size(41, 18);
@@ -162,7 +168,7 @@
             linkLabel1.ActiveLinkColor = Color.Green;
             linkLabel1.AutoSize = true;
             linkLabel1.BackColor = Color.Transparent;
-            linkLabel1.LinkColor = Color.Cyan;
+            linkLabel1.LinkColor = Color.White;
             linkLabel1.Location = new Point(53, 288);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(223, 15);

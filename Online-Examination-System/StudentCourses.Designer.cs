@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             coursesDgv = new DataGridView();
-            logoutBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)coursesDgv).BeginInit();
             SuspendLayout();
             // 
@@ -37,28 +36,16 @@
             // 
             coursesDgv.BackgroundColor = SystemColors.ActiveCaption;
             coursesDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            coursesDgv.Location = new Point(12, 12);
+            coursesDgv.Location = new Point(190, 131);
             coursesDgv.Name = "coursesDgv";
-            coursesDgv.Size = new Size(346, 252);
+            coursesDgv.Size = new Size(483, 252);
             coursesDgv.TabIndex = 0;
-            // 
-            // logoutBtn
-            // 
-            logoutBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            logoutBtn.Location = new Point(125, 271);
-            logoutBtn.Name = "logoutBtn";
-            logoutBtn.Size = new Size(110, 29);
-            logoutBtn.TabIndex = 1;
-            logoutBtn.Text = "Logout";
-            logoutBtn.UseVisualStyleBackColor = true;
-            logoutBtn.Click += logoutBtn_Click;
             // 
             // StudentCourses
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(365, 312);
-            Controls.Add(logoutBtn);
+            ClientSize = new Size(900, 546);
             Controls.Add(coursesDgv);
             Name = "StudentCourses";
             Text = "StudentCourses";
@@ -70,6 +57,5 @@
         #endregion
 
         private DataGridView coursesDgv;
-        private Button logoutBtn;
     }
 }

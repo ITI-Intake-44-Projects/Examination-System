@@ -46,7 +46,7 @@ namespace Online_Examination_System
                 //CourseName.Location = new Point(10, 10);
                 p.Controls.Add(CourseName);
 
-                y += p.Height + 20;
+                y += p.Height + 10;
             }
 
         }

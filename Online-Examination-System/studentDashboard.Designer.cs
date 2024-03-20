@@ -61,13 +61,17 @@
             // 
             // coursesBtn
             // 
+            coursesBtn.BackColor = SystemColors.Control;
+            coursesBtn.FlatAppearance.BorderColor = Color.AliceBlue;
+            coursesBtn.FlatAppearance.BorderSize = 0;
+            coursesBtn.FlatStyle = FlatStyle.System;
             coursesBtn.Font = new Font("Segoe UI", 9F);
             coursesBtn.Location = new Point(175, 79);
             coursesBtn.Name = "coursesBtn";
             coursesBtn.Size = new Size(121, 25);
             coursesBtn.TabIndex = 2;
             coursesBtn.Text = "My Courses";
-            coursesBtn.UseVisualStyleBackColor = true;
+            coursesBtn.UseVisualStyleBackColor = false;
             coursesBtn.Click += coursesBtn_Click;
             // 
             // prevExamsBtn
