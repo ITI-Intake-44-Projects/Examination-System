@@ -39,6 +39,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Georgia", 15F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(192, 64, 0);
             label1.Location = new Point(83, 43);
             label1.Name = "label1";
             label1.Size = new Size(209, 24);
@@ -58,35 +59,38 @@
             // 
             // profileBtn
             // 
+            profileBtn.BackColor = Color.FromArgb(255, 192, 128);
             profileBtn.Font = new Font("Segoe UI", 9F);
             profileBtn.Location = new Point(12, 102);
             profileBtn.Name = "profileBtn";
             profileBtn.Size = new Size(123, 35);
             profileBtn.TabIndex = 6;
             profileBtn.Text = "My Profile";
-            profileBtn.UseVisualStyleBackColor = true;
+            profileBtn.UseVisualStyleBackColor = false;
             profileBtn.Click += profileBtn_Click;
             // 
             // coursesBtn
             // 
+            coursesBtn.BackColor = Color.FromArgb(128, 255, 255);
             coursesBtn.Font = new Font("Segoe UI", 9F);
             coursesBtn.Location = new Point(222, 102);
             coursesBtn.Name = "coursesBtn";
             coursesBtn.Size = new Size(123, 35);
             coursesBtn.TabIndex = 9;
             coursesBtn.Text = "My Courses";
-            coursesBtn.UseVisualStyleBackColor = true;
+            coursesBtn.UseVisualStyleBackColor = false;
             coursesBtn.Click += coursesBtn_Click;
             // 
             // questionBtn
             // 
+            questionBtn.BackColor = Color.FromArgb(255, 255, 128);
             questionBtn.Font = new Font("Segoe UI", 9F);
             questionBtn.Location = new Point(118, 150);
             questionBtn.Name = "questionBtn";
             questionBtn.Size = new Size(123, 35);
             questionBtn.TabIndex = 10;
             questionBtn.Text = "Questions";
-            questionBtn.UseVisualStyleBackColor = true;
+            questionBtn.UseVisualStyleBackColor = false;
             questionBtn.Click += questionBtn_Click;
             // 
             // instructorDashboard

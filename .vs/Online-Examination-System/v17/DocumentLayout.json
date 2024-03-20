@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|D:\\ITI\\Projects\\Advanced-SQL\\workspace\\online-examination-system\\studentnavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\studentnavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\workspace\\online-examination-system\\studentnavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\studentnavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 280,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +39,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentNavigationArea.cs",
+              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\StudentNavigationArea.cs",
+              "RelativeDocumentMoniker": "Online-Examination-System\\StudentNavigationArea.cs",
+              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\StudentNavigationArea.cs",
+              "RelativeToolTip": "Online-Examination-System\\StudentNavigationArea.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAwwEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T19:57:07.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentNavigationArea.cs [Design]",
+              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\StudentNavigationArea.cs",
+              "RelativeDocumentMoniker": "Online-Examination-System\\StudentNavigationArea.cs",
+              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\StudentNavigationArea.cs [Design]",
+              "RelativeToolTip": "Online-Examination-System\\StudentNavigationArea.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T19:55:01.393Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

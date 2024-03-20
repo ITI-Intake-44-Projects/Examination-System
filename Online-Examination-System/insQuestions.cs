@@ -170,45 +170,67 @@ namespace Online_Examination_System
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-       
-                if (dataGridView1.SelectedRows.Count > 0)
+
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                // Get the first value of the first cell in the selected row
+                int qID = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+
+                // Retrieve the question to update from the database based on the extracted qID
+                var questionToUpdate = db.Questions.FirstOrDefault(q => q.Q_Id == qID);
+
+                if (questionToUpdate != null)
                 {
-                    // Get the first value of the first cell in the selected row
-                    int qID = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+                    // Update the question properties with values from your textboxes or other input controls
+                    questionToUpdate.Name = txt_name.Text;
+                    questionToUpdate.type = txt_type.Text;
+                    questionToUpdate.Marks = int.Parse(txt_marks.Text);
+                    questionToUpdate.ModelAns = txt_answer.Text;
 
-                    // Retrieve the question to update from the database based on the extracted qID
-                    var questionToUpdate = db.Questions.FirstOrDefault(q => q.Q_Id == qID);
+                    db.SaveChanges();
 
-                    if (questionToUpdate != null)
-                    {
-                        // Update the question properties with values from your textboxes or other input controls
-                        questionToUpdate.Name = txt_name.Text;
-                        questionToUpdate.type = txt_type.Text;
-                        questionToUpdate.Marks = int.Parse(txt_marks.Text);
-                        questionToUpdate.ModelAns = txt_answer.Text;
+                    var selectedCourse = (dynamic)comboBox1.SelectedItem;
+                    int courseId = selectedCourse.Crs_ID;
 
-                        db.SaveChanges();
+                    // Reload the DataGridView to reflect the changes
+                    loadQuestionsById(courseId);
 
-                        var selectedCourse = (dynamic)comboBox1.SelectedItem;
-                        int courseId = selectedCourse.Crs_ID;
-
-                        // Reload the DataGridView to reflect the changes
-                        loadQuestionsById(courseId);
-
-                        // Clear the textboxes after updating
-                        txt_name.Text = "";
-                        txt_type.Text = "";
-                        txt_marks.Text = "";
-                        txt_answer.Text = "";
-                    }
-                    else
-                    {
-                        MessageBox.Show("Question not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    // Clear the textboxes after updating
+                    txt_name.Text = "";
+                    txt_type.Text = "";
+                    txt_marks.Text = "";
+                    txt_answer.Text = "";
                 }
-            
+                else
+                {
+                    MessageBox.Show("Question not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
 
         }
+        private void btnInsChoices_Click(object sender, EventArgs e)
+        {
+            // Check if any row is selected in the DataGridView
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+             
+                // Get the first value of the first cell in the selected row
+                int qID = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+
+                // Retrieve the question to update from the database based on the extracted qID
+                Question question = db.Questions.FirstOrDefault(q => q.Q_Id == qID);
+
+                InsChoices formchoices = new InsChoices(question, db);
+                formchoices.Show();
+            }
+            else
+            {
+                // If no row is selected, display a message to the user
+                MessageBox.Show("Please select a row before proceeding.", "No Row Selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
     }
 
 

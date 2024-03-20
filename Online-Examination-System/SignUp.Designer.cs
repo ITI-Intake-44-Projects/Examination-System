@@ -50,24 +50,27 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(279, 162);
+            label2.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label2.Location = new Point(293, 169);
             label2.Name = "label2";
-            label2.Size = new Size(59, 15);
+            label2.Size = new Size(70, 16);
             label2.TabIndex = 13;
             label2.Text = "Birth Date";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(26, 162);
+            label1.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label1.Location = new Point(21, 168);
             label1.Name = "label1";
-            label1.Size = new Size(49, 15);
+            label1.Size = new Size(57, 16);
             label1.TabIndex = 14;
             label1.Text = "Address";
             // 
             // password_txt
             // 
-            password_txt.Location = new Point(353, 116);
+            password_txt.Location = new Point(378, 118);
             password_txt.Name = "password_txt";
             password_txt.PasswordChar = '*';
             password_txt.PlaceholderText = "Password";
@@ -76,7 +79,7 @@
             // 
             // username_txt
             // 
-            username_txt.Location = new Point(353, 72);
+            username_txt.Location = new Point(378, 69);
             username_txt.Name = "username_txt";
             username_txt.PlaceholderText = "Username";
             username_txt.Size = new Size(207, 23);
@@ -84,9 +87,10 @@
             // 
             // nextBtn
             // 
-            nextBtn.Location = new Point(470, 198);
+            nextBtn.Font = new Font("Arial", 12.25F);
+            nextBtn.Location = new Point(495, 212);
             nextBtn.Name = "nextBtn";
-            nextBtn.Size = new Size(90, 27);
+            nextBtn.Size = new Size(90, 30);
             nextBtn.TabIndex = 9;
             nextBtn.Text = "Next";
             nextBtn.UseVisualStyleBackColor = true;
@@ -95,24 +99,26 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(279, 119);
+            label4.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label4.Location = new Point(295, 121);
             label4.Name = "label4";
-            label4.Size = new Size(57, 15);
+            label4.Size = new Size(68, 16);
             label4.TabIndex = 18;
             label4.Text = "Password";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(279, 80);
+            label5.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label5.Location = new Point(295, 76);
             label5.Name = "label5";
-            label5.Size = new Size(60, 15);
+            label5.Size = new Size(71, 16);
             label5.TabIndex = 19;
             label5.Text = "Username";
             // 
             // address_txt
             // 
-            address_txt.Location = new Point(99, 159);
+            address_txt.Location = new Point(99, 168);
             address_txt.Name = "address_txt";
             address_txt.PlaceholderText = "Address";
             address_txt.Size = new Size(153, 23);
@@ -128,7 +134,7 @@
             // 
             // lastname_txt
             // 
-            lastname_txt.Location = new Point(99, 116);
+            lastname_txt.Location = new Point(99, 121);
             lastname_txt.Name = "lastname_txt";
             lastname_txt.PlaceholderText = "Last Name";
             lastname_txt.Size = new Size(153, 23);
@@ -137,24 +143,26 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(20, 78);
+            label6.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label6.Location = new Point(12, 75);
             label6.Name = "label6";
-            label6.Size = new Size(64, 15);
+            label6.Size = new Size(75, 16);
             label6.TabIndex = 19;
             label6.Text = "First Name";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(20, 116);
+            label7.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label7.Location = new Point(12, 124);
             label7.Name = "label7";
-            label7.Size = new Size(63, 15);
+            label7.Size = new Size(74, 16);
             label7.TabIndex = 18;
             label7.Text = "Last Name";
             // 
             // datePicker
             // 
-            datePicker.Location = new Point(353, 156);
+            datePicker.Location = new Point(378, 162);
             datePicker.Name = "datePicker";
             datePicker.Size = new Size(207, 23);
             datePicker.TabIndex = 20;
@@ -163,16 +171,17 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(30, 201);
+            label3.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label3.Location = new Point(26, 218);
             label3.Name = "label3";
-            label3.Size = new Size(30, 15);
+            label3.Size = new Size(36, 16);
             label3.TabIndex = 12;
             label3.Text = "Role";
             // 
             // role_cb
             // 
             role_cb.FormattingEnabled = true;
-            role_cb.Location = new Point(99, 201);
+            role_cb.Location = new Point(99, 218);
             role_cb.Name = "role_cb";
             role_cb.Size = new Size(153, 23);
             role_cb.TabIndex = 21;
@@ -189,9 +198,10 @@
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(353, 197);
+            backBtn.Font = new Font("Arial", 12.25F);
+            backBtn.Location = new Point(321, 212);
             backBtn.Name = "backBtn";
-            backBtn.Size = new Size(90, 27);
+            backBtn.Size = new Size(90, 30);
             backBtn.TabIndex = 23;
             backBtn.Text = "Back";
             backBtn.UseVisualStyleBackColor = true;
@@ -201,7 +211,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(584, 233);
+            ClientSize = new Size(611, 269);
             Controls.Add(backBtn);
             Controls.Add(label8);
             Controls.Add(role_cb);

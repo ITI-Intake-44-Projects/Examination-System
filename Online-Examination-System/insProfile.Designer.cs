@@ -47,6 +47,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F);
+            label1.ForeColor = Color.Red;
             label1.Location = new Point(12, 56);
             label1.Name = "label1";
             label1.Size = new Size(36, 21);
@@ -67,6 +68,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
+            label2.ForeColor = Color.Red;
             label2.Location = new Point(12, 95);
             label2.Name = "label2";
             label2.Size = new Size(97, 21);
@@ -75,6 +77,7 @@
             // 
             // txt_fname
             // 
+            txt_fname.ForeColor = Color.FromArgb(255, 128, 128);
             txt_fname.Location = new Point(146, 96);
             txt_fname.Name = "txt_fname";
             txt_fname.ReadOnly = true;
@@ -83,6 +86,7 @@
             // 
             // txt_lname
             // 
+            txt_lname.ForeColor = Color.FromArgb(255, 192, 128);
             txt_lname.Location = new Point(146, 126);
             txt_lname.Name = "txt_lname";
             txt_lname.ReadOnly = true;
@@ -93,6 +97,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F);
+            label3.ForeColor = Color.Red;
             label3.Location = new Point(12, 125);
             label3.Name = "label3";
             label3.Size = new Size(91, 21);
@@ -101,6 +106,7 @@
             // 
             // txt_addr
             // 
+            txt_addr.ForeColor = Color.FromArgb(255, 255, 128);
             txt_addr.Location = new Point(146, 160);
             txt_addr.Name = "txt_addr";
             txt_addr.ReadOnly = true;
@@ -111,6 +117,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F);
+            label4.ForeColor = Color.Red;
             label4.Location = new Point(12, 159);
             label4.Name = "label4";
             label4.Size = new Size(73, 21);
@@ -119,6 +126,7 @@
             // 
             // txt_whours
             // 
+            txt_whours.ForeColor = Color.FromArgb(128, 255, 255);
             txt_whours.Location = new Point(146, 193);
             txt_whours.Name = "txt_whours";
             txt_whours.ReadOnly = true;
@@ -129,6 +137,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F);
+            label5.ForeColor = Color.Red;
             label5.Location = new Point(12, 191);
             label5.Name = "label5";
             label5.Size = new Size(122, 21);
@@ -137,6 +146,7 @@
             // 
             // txt_birth
             // 
+            txt_birth.ForeColor = Color.FromArgb(255, 128, 255);
             txt_birth.Location = new Point(146, 230);
             txt_birth.Name = "txt_birth";
             txt_birth.ReadOnly = true;
@@ -147,6 +157,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F);
+            label6.ForeColor = Color.Red;
             label6.Location = new Point(12, 228);
             label6.Name = "label6";
             label6.Size = new Size(82, 21);
