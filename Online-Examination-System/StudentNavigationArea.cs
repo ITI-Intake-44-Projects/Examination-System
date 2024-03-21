@@ -15,7 +15,6 @@ namespace Online_Examination_System
     {
 
         private Form activeForm;
-
         Student student;
         OnlineExaminatonSystemContext db;
         public StudentNavigationArea(Student _student, OnlineExaminatonSystemContext _db)
@@ -33,12 +32,11 @@ namespace Online_Examination_System
 
 
 
-        private void OpenChildForm(Form childForm) // , object btnSender
+        private void OpenChildForm(Form childForm)
         {
             if (activeForm != null)
                 activeForm.Close();
 
-            //ActivateButton(btnSender);
 
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -68,26 +66,8 @@ namespace Online_Examination_System
             OpenChildForm(new PreviousExams(student, db));
         }
 
-        private void requestExamBtn_Click(object sender, EventArgs e)
-        {
 
-
-        }
-
-        private void logoutBtn_Click(object sender, EventArgs e)
-        {
-            Login signUp = new Login();
-            this.Hide();
-            signUp.FormClosed += (obj, args) => this.Close(); ;
-            signUp.Show();
-        }
-
-
-
-        private void logoutBtn_Click_1(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void StudentNavigationArea_Load(object sender, EventArgs e)
         {
@@ -108,15 +88,16 @@ namespace Online_Examination_System
             }
             else
             {
-                // Exam requestExam = new Exam(student, db, db.Courses.Where(c => c.Crs_ID == crs_id).FirstOrDefault());
                 OpenChildForm(new Exam(student, db, db.Courses.Where(c => c.Crs_ID == crs_id).FirstOrDefault()));
-
-                //requestExam.Show();
             }
         }
 
-       
-
-       
+        private void logoutBtn_Click_1(object sender, EventArgs e)
+        {
+            Login signUp = new Login();
+            this.Hide();
+            signUp.FormClosed += (obj, args) => this.Close(); ;
+            signUp.Show();
+        }
     }
 }

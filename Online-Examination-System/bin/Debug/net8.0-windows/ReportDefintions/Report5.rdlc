@@ -209,6 +209,7 @@
                               <Value>=Fields!GradePercentage.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
+                                <Format>0;(0)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -229,7 +230,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -268,7 +268,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>9.47in</Width>
   <Page>
     <PageHeader>
       <Height>1in</Height>

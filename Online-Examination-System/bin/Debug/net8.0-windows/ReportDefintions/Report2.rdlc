@@ -22,7 +22,22 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Course Name</Value>
+                              <Value>Topics Names</Value>
+                              <Style>
+                                <FontSize>14pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>LightGrey</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
                               <Style>
                                 <FontSize>14pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -121,7 +136,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>9.47in</Width>
   <Page>
     <PageHeader>
       <Height>1in</Height>
@@ -135,7 +150,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Course topics</Value>
+                  <Value>Courses Topics</Value>
                   <Style>
                     <FontSize>18pt</FontSize>
                     <FontWeight>Bold</FontWeight>

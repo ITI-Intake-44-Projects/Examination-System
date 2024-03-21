@@ -1,6 +1,6 @@
 ﻿namespace Online_Examination_System
 {
-    partial class StudentNavigationArea
+    partial class InstructorNavigationArea
     {
         /// <summary>
         /// Required designer variable.
@@ -29,58 +29,46 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            requestExamBtn = new Button();
-            courses_box = new ComboBox();
+            Ques_Btn = new Button();
             logoutBtn = new Button();
-            PreviousExamsBtn = new Button();
             coursesBtn = new Button();
-            profileBtn = new Button();
+            ProfileBtn = new Button();
             panelLogo = new Panel();
             title = new Label();
             panelDesktopPanel = new Panel();
+            panel3 = new Panel();
             panel1.SuspendLayout();
             panelLogo.SuspendLayout();
+            panelDesktopPanel.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(51, 51, 76);
-            panel1.Controls.Add(requestExamBtn);
-            panel1.Controls.Add(courses_box);
+            panel1.Controls.Add(Ques_Btn);
             panel1.Controls.Add(logoutBtn);
-            panel1.Controls.Add(PreviousExamsBtn);
             panel1.Controls.Add(coursesBtn);
-            panel1.Controls.Add(profileBtn);
+            panel1.Controls.Add(ProfileBtn);
             panel1.Controls.Add(panelLogo);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(220, 585);
-            panel1.TabIndex = 0;
+            panel1.TabIndex = 4;
             // 
-            // requestExamBtn
+            // Ques_Btn
             // 
-            requestExamBtn.FlatAppearance.BorderSize = 0;
-            requestExamBtn.FlatStyle = FlatStyle.Flat;
-            requestExamBtn.ForeColor = Color.Gainsboro;
-            requestExamBtn.Location = new Point(3, 224);
-            requestExamBtn.Name = "requestExamBtn";
-            requestExamBtn.Size = new Size(101, 60);
-            requestExamBtn.TabIndex = 8;
-            requestExamBtn.Text = "Request Exam";
-            requestExamBtn.UseVisualStyleBackColor = true;
-            requestExamBtn.Click += requestExamBtn_Click_1;
-            // 
-            // courses_box
-            // 
-            courses_box.BackColor = Color.White;
-            courses_box.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            courses_box.FormattingEnabled = true;
-            courses_box.Location = new Point(100, 245);
-            courses_box.Name = "courses_box";
-            courses_box.Size = new Size(114, 21);
-            courses_box.TabIndex = 9;
-            courses_box.Text = "  Choose Course";
+            Ques_Btn.Dock = DockStyle.Top;
+            Ques_Btn.FlatAppearance.BorderSize = 0;
+            Ques_Btn.FlatStyle = FlatStyle.Flat;
+            Ques_Btn.ForeColor = Color.Gainsboro;
+            Ques_Btn.Location = new Point(0, 200);
+            Ques_Btn.Name = "Ques_Btn";
+            Ques_Btn.Size = new Size(220, 60);
+            Ques_Btn.TabIndex = 8;
+            Ques_Btn.Text = "Questions";
+            Ques_Btn.UseVisualStyleBackColor = true;
+            Ques_Btn.Click += Ques_Btn_Click;
             // 
             // logoutBtn
             // 
@@ -88,53 +76,41 @@
             logoutBtn.FlatAppearance.BorderSize = 0;
             logoutBtn.FlatStyle = FlatStyle.Flat;
             logoutBtn.ForeColor = Color.Gainsboro;
-            logoutBtn.Location = new Point(0, 526);
+            logoutBtn.Location = new Point(0, 525);
             logoutBtn.Name = "logoutBtn";
-            logoutBtn.Size = new Size(220, 59);
+            logoutBtn.Size = new Size(220, 60);
             logoutBtn.TabIndex = 7;
             logoutBtn.Text = "Logout";
             logoutBtn.UseVisualStyleBackColor = true;
-            logoutBtn.Click += logoutBtn_Click_1;
-            // 
-            // PreviousExamsBtn
-            // 
-            PreviousExamsBtn.FlatAppearance.BorderSize = 0;
-            PreviousExamsBtn.FlatStyle = FlatStyle.Flat;
-            PreviousExamsBtn.ForeColor = Color.Gainsboro;
-            PreviousExamsBtn.Location = new Point(0, 290);
-            PreviousExamsBtn.Name = "PreviousExamsBtn";
-            PreviousExamsBtn.Size = new Size(220, 54);
-            PreviousExamsBtn.TabIndex = 3;
-            PreviousExamsBtn.Text = "Previous Exams";
-            PreviousExamsBtn.UseVisualStyleBackColor = true;
-            PreviousExamsBtn.Click += PreviousExamsBtn_Click;
+            logoutBtn.Click += logoutBtn_Click;
             // 
             // coursesBtn
             // 
+            coursesBtn.Dock = DockStyle.Top;
             coursesBtn.FlatAppearance.BorderSize = 0;
             coursesBtn.FlatStyle = FlatStyle.Flat;
             coursesBtn.ForeColor = Color.Gainsboro;
-            coursesBtn.Location = new Point(0, 158);
+            coursesBtn.Location = new Point(0, 140);
             coursesBtn.Name = "coursesBtn";
             coursesBtn.Size = new Size(220, 60);
             coursesBtn.TabIndex = 2;
-            coursesBtn.Text = "My Courses";
+            coursesBtn.Text = "Courses";
             coursesBtn.UseVisualStyleBackColor = true;
             coursesBtn.Click += coursesBtn_Click;
             // 
-            // profileBtn
+            // ProfileBtn
             // 
-            profileBtn.Dock = DockStyle.Top;
-            profileBtn.FlatAppearance.BorderSize = 0;
-            profileBtn.FlatStyle = FlatStyle.Flat;
-            profileBtn.ForeColor = Color.Gainsboro;
-            profileBtn.Location = new Point(0, 80);
-            profileBtn.Name = "profileBtn";
-            profileBtn.Size = new Size(220, 60);
-            profileBtn.TabIndex = 1;
-            profileBtn.Text = "Profile";
-            profileBtn.UseVisualStyleBackColor = true;
-            profileBtn.Click += profileBtn_Click;
+            ProfileBtn.Dock = DockStyle.Top;
+            ProfileBtn.FlatAppearance.BorderSize = 0;
+            ProfileBtn.FlatStyle = FlatStyle.Flat;
+            ProfileBtn.ForeColor = Color.Gainsboro;
+            ProfileBtn.Location = new Point(0, 80);
+            ProfileBtn.Name = "ProfileBtn";
+            ProfileBtn.Size = new Size(220, 60);
+            ProfileBtn.TabIndex = 1;
+            ProfileBtn.Text = "Profile";
+            ProfileBtn.UseVisualStyleBackColor = true;
+            ProfileBtn.Click += ProfileBtn_Click;
             // 
             // panelLogo
             // 
@@ -159,41 +135,50 @@
             // 
             // panelDesktopPanel
             // 
+            panelDesktopPanel.AutoScroll = true;
+            panelDesktopPanel.AutoSize = true;
             panelDesktopPanel.BackColor = Color.FromArgb(51, 51, 76);
+            panelDesktopPanel.Controls.Add(panel3);
             panelDesktopPanel.Dock = DockStyle.Fill;
-            panelDesktopPanel.Location = new Point(220, 0);
+            panelDesktopPanel.Location = new Point(0, 0);
             panelDesktopPanel.Name = "panelDesktopPanel";
-            panelDesktopPanel.Size = new Size(916, 585);
-            panelDesktopPanel.TabIndex = 1;
+            panelDesktopPanel.Size = new Size(1215, 585);
+            panelDesktopPanel.TabIndex = 5;
             // 
-            // StudentNavigationArea
+            // panel3
+            // 
+            panel3.Location = new Point(235, 12);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(968, 561);
+            panel3.TabIndex = 4;
+            // 
+            // InstructorNavigationArea
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1136, 585);
-            Controls.Add(panelDesktopPanel);
+            ClientSize = new Size(1215, 585);
             Controls.Add(panel1);
-            Name = "StudentNavigationArea";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "StudentNavigationArea";
-            Load += StudentNavigationArea_Load;
+            Controls.Add(panelDesktopPanel);
+            Name = "InstructorNavigationArea";
+            Text = "InstructorNavigationArea";
             panel1.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
             panelLogo.PerformLayout();
+            panelDesktopPanel.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Panel panel1;
-        private Button profileBtn;
-        private Panel panelLogo;
+        private Button Ques_Btn;
+        private Button logoutBtn;
         private Button coursesBtn;
+        private Button ProfileBtn;
+        private Panel panelLogo;
         private Label title;
         private Panel panelDesktopPanel;
-        private Button logoutBtn;
-        private Button PreviousExamsBtn;
-        private ComboBox courses_box;
-        private Button requestExamBtn;
+        private Panel panel3;
     }
 }

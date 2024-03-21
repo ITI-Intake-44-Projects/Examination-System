@@ -28,15 +28,20 @@ namespace Online_Examination_System
             txt_lname.Text = instractor.LName;
             txt_whours.Text = instractor.Working_Hours.ToString();
             txt_addr.Text = instractor.Address;
-            txt_birth.Text = instractor.Birthdate.ToString();
+            txt_birth.Text = $"{instractor.Birthdate.Value.Year}-{instractor.Birthdate.Value.Month}-{instractor.Birthdate.Value.Day}";
+            //txt_birth.Text = instractor.Birthdate.ToString();
         }
-
         private void btn_back_Click(object sender, EventArgs e)
         {
             instructorDashboard instructorDashboard = new instructorDashboard(instractor, db);
             this.Hide();
             instructorDashboard.FormClosed += (obj, args) => this.Close(); ;
             instructorDashboard.Show();
+        }
+
+        private void txt_lname_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

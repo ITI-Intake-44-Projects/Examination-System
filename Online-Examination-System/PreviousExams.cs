@@ -34,7 +34,6 @@ namespace Online_Examination_System
                 Panel p = new Panel();
                 p.Location = new System.Drawing.Point(x, y);
                 p.AutoSize = true;
-                //p.Size = new System.Drawing.Size(200, 500);
                 Controls.Add(p);
                 var CourseName = new Label();
                 string passed = "";
@@ -43,10 +42,11 @@ namespace Online_Examination_System
                 CourseName.AutoSize = true;
                 CourseName.Text = $"Course: {exam.Course.Name}        Grade: {exam.Grade.ToString()}        Status:{passed}";
                 CourseName.Font = new Font("Arial", 20);
+                CourseName.ForeColor = Color.White;
                 //CourseName.Location = new Point(10, 10);
                 p.Controls.Add(CourseName);
 
-                y += p.Height + 10;
+                y += p.Height;
             }
 
         }

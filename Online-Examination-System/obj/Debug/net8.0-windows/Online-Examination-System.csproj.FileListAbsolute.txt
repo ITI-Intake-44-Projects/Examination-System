@@ -504,7 +504,6 @@ E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\bin\Deb
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.csproj.AssemblyReference.cache
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.CompleteSignUpAsStudent.resources
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Exam.resources
-E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\AbdElfattah.Form1.resources
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Form2.resources
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Form3.resources
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Form4.resources
@@ -538,3 +537,6 @@ E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Deb
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.InsChoices.resources
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Properties.Resources.resources
 E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.StudentNavigationArea.resources
+E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.Form1.resources
+E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.SuperVisorNavigationArea.resources
+E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.InstructorNavigationArea.resources

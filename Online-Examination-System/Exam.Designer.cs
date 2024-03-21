@@ -37,7 +37,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackColor = SystemColors.Window;
+            BackColor = Color.FromArgb(51, 51, 76);
             ClientSize = new Size(1185, 763);
             Name = "Exam";
             Padding = new Padding(10);

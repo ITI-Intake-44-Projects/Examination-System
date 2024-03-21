@@ -15,7 +15,7 @@
               <Width>1.58167in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.58167in</Width>
+              <Width>2.165in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -325,7 +325,7 @@
         <Top>0.32084in</Top>
         <Left>1.25583in</Left>
         <Height>0.5in</Height>
-        <Width>6.32667in</Width>
+        <Width>6.91001in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -336,7 +336,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>8.87083in</Width>
+  <Width>9.47083in</Width>
   <Page>
     <PageHeader>
       <Height>1in</Height>
@@ -350,7 +350,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Questions and choices</Value>
+                  <Value>Questions and Choices</Value>
                   <Style>
                     <FontSize>18pt</FontSize>
                     <FontWeight>Bold</FontWeight>

@@ -136,6 +136,7 @@ namespace Online_Examination_System
 
                 Label l1 = new Label();
                 l1.Text = $"Q{count++}-{q.Ques.Name}";
+                l1.ForeColor = Color.White;
                 l1.Size = new System.Drawing.Size(500, 20);
                 groupBox1.Controls.Add(l1);
 
@@ -147,6 +148,7 @@ namespace Online_Examination_System
                     c1.Location = new System.Drawing.Point(50, radioButtonY);
                     c1.Size = new System.Drawing.Size(700, 20);
                     c1.Text = c.Choice;
+                    c1.ForeColor= Color.White;
                     groupBox1.Controls.Add(c1);
                     radioButtonY += 40;
                 }

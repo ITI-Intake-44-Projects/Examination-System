@@ -36,15 +36,16 @@
             // 
             coursesDgv.BackgroundColor = SystemColors.ActiveCaption;
             coursesDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            coursesDgv.Location = new Point(190, 131);
+            coursesDgv.Location = new Point(132, 95);
             coursesDgv.Name = "coursesDgv";
-            coursesDgv.Size = new Size(483, 252);
+            coursesDgv.Size = new Size(628, 292);
             coursesDgv.TabIndex = 0;
             // 
             // StudentCourses
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(51, 51, 76);
             ClientSize = new Size(900, 546);
             Controls.Add(coursesDgv);
             Name = "StudentCourses";

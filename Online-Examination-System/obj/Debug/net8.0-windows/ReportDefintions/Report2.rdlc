@@ -6,7 +6,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.96667in</Width>
+              <Width>1.10417in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -23,31 +23,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Topics Names</Value>
-                              <Style>
-                                <FontSize>14pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>LightGrey</Color>
-                              </Style>
+                              <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style>
-                                <FontSize>14pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>LightGrey</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
+                          <Style />
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox1</rd:DefaultName>
@@ -56,7 +35,6 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>Teal</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -80,9 +58,7 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Topic_Name.Value</Value>
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
+                              <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -123,9 +99,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet2</DataSetName>
         <Top>0.69584in</Top>
-        <Left>1.89167in</Left>
+        <Left>1.25in</Left>
         <Height>0.5in</Height>
-        <Width>1.96667in</Width>
+        <Width>1.10417in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -136,7 +112,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>9.47in</Width>
+  <Width>6.5in</Width>
   <Page>
     <PageHeader>
       <Height>1in</Height>
@@ -150,21 +126,17 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Courses Topics</Value>
-                  <Style>
-                    <FontSize>18pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <Color>LightGrey</Color>
-                  </Style>
+                  <Value>Course Topics</Value>
+                  <Style />
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
-          <Top>0.27916in</Top>
-          <Left>1.89167in</Left>
-          <Height>0.4in</Height>
+          <Top>0.42916in</Top>
+          <Left>1.54167in</Left>
+          <Height>0.25in</Height>
           <Width>2.70833in</Width>
           <Style>
             <Border>
@@ -181,7 +153,6 @@
         <Border>
           <Style>None</Style>
         </Border>
-        <BackgroundColor>Teal</BackgroundColor>
       </Style>
     </PageHeader>
     <LeftMargin>1in</LeftMargin>
@@ -214,7 +185,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
-        <rd:SchemaPath>D:\المنحه\V5\Online-Examination-System\DataSet1.xsd</rd:SchemaPath>
+        <rd:SchemaPath>E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\DataSet1.xsd</rd:SchemaPath>
         <rd:TableName>GetCourseTopics</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
