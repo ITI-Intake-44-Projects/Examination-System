@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // Exam
@@ -35,7 +37,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackColor = SystemColors.Window;
+            BackColor = Color.FromArgb(51, 51, 76);
             ClientSize = new Size(1185, 763);
             Name = "Exam";
             Padding = new Padding(10);
@@ -45,5 +47,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1;
     }
 }

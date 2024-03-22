@@ -28,37 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_back = new Button();
             dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // btn_back
-            // 
-            btn_back.Location = new Point(402, 230);
-            btn_back.Name = "btn_back";
-            btn_back.Size = new Size(92, 23);
-            btn_back.TabIndex = 13;
-            btn_back.Text = "Back";
-            btn_back.UseVisualStyleBackColor = true;
-            btn_back.Click += btn_back_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(15, 12);
+            dataGridView1.Location = new Point(130, 97);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(479, 212);
+            dataGridView1.Size = new Size(694, 266);
             dataGridView1.TabIndex = 14;
             // 
             // insCourses
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(518, 265);
+            BackColor = Color.FromArgb(51, 51, 76);
+            ClientSize = new Size(952, 521);
             Controls.Add(dataGridView1);
-            Controls.Add(btn_back);
             Name = "insCourses";
             Text = "Courses";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -66,8 +55,6 @@
         }
 
         #endregion
-
-        private Button btn_back;
         private DataGridView dataGridView1;
     }
 }

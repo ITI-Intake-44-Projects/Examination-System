@@ -14,12 +14,16 @@ namespace Online_Examination_System
         Student student;
         Course course;
         List<string> Answers = new List<string>();
-
+        private Label timeLabel;
+        int remainingTimeInSeconds;
         public Exam()
         {
             InitializeComponent();
+            InitializeTimer();
+            InitializeTimeLabel();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            remainingTimeInSeconds = 3600;
         }
 
         public Exam(Student _st, OnlineExaminatonSystemContext _sys, Course course) : this()
@@ -104,6 +108,7 @@ namespace Online_Examination_System
 
         private void Exam_Load(object sender, EventArgs e)
         {
+            timer1.Enabled = true;
             using (var sys = new OnlineExaminatonSystemContext())
             {
 
@@ -131,6 +136,7 @@ namespace Online_Examination_System
 
                 Label l1 = new Label();
                 l1.Text = $"Q{count++}-{q.Ques.Name}";
+                l1.ForeColor = Color.White;
                 l1.Size = new System.Drawing.Size(500, 20);
                 groupBox1.Controls.Add(l1);
 
@@ -142,6 +148,7 @@ namespace Online_Examination_System
                     c1.Location = new System.Drawing.Point(50, radioButtonY);
                     c1.Size = new System.Drawing.Size(700, 20);
                     c1.Text = c.Choice;
+                    c1.ForeColor= Color.White;
                     groupBox1.Controls.Add(c1);
                     radioButtonY += 40;
                 }
@@ -149,16 +156,66 @@ namespace Online_Examination_System
             }
 
             Panel ButtonBox = new Panel();
-            ButtonBox.Location = new System.Drawing.Point((this.Width / 2), y);
+            ButtonBox.Location = new System.Drawing.Point((this.Width / 2)+200, y);
             ButtonBox.Size = new System.Drawing.Size(180, 80);
 
             Controls.Add(ButtonBox);
 
             Button submit = new Button();
             submit.Size = new System.Drawing.Size(175, 45);
+            
             submit.Text = "Sumbit";
             submit.Click += submit_Click;
+            submit.BackColor= Color.FromArgb(92, 184, 92);
+            submit.FlatStyle = FlatStyle.Flat;
+            submit.FlatAppearance.BorderSize = 0;
             ButtonBox.Controls.Add(submit);
         }
+
+        private void InitializeTimer()
+        {
+            //timer = new Timer();
+            timer1.Interval = 1000; // Interval set to 1 second (1000 milliseconds)
+            timer1.Tick += timer1_Tick;
+            timer1.Start(); // Start the timer
+        }
+
+        private void InitializeTimeLabel()
+        {
+            timeLabel = new Label();
+            timeLabel.AutoSize = true;
+            timeLabel.Location = new System.Drawing.Point(this.Width-555, 20); // Set the position
+            this.Controls.Add(timeLabel);
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            //timeLabel.Text = DateTime.Now.ToString("HH:mm:ss");
+            remainingTimeInSeconds--;
+
+            // Check if time is up
+            if (remainingTimeInSeconds <= 0)
+            {
+                timer1.Stop(); // Stop the timer when time is up
+                //var result = MessageBox.Show("Time's up!");
+               var  result = MessageBox.Show($"Time's up! ","Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(result == DialogResult.OK)
+                {
+                    this.Close();
+                    submit_Click(sender, new EventArgs());
+                }
+            }
+            else
+            {
+                // Update the label text with remaining time
+                TimeSpan timeSpan = TimeSpan.FromSeconds(remainingTimeInSeconds);
+                string timeLeft = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
+                timeLabel.Text = "Time Left: " + timeLeft;
+
+                timeLabel.Font = new Font("Arial", 20);
+                timeLabel.ForeColor = Color.Red;
+            }
+        }
+
     }
 }

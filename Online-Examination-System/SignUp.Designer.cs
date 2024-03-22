@@ -50,7 +50,9 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(293, 169);
             label2.Name = "label2";
             label2.Size = new Size(70, 16);
@@ -61,7 +63,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(21, 168);
             label1.Name = "label1";
             label1.Size = new Size(57, 16);
@@ -87,7 +91,10 @@
             // 
             // nextBtn
             // 
+            nextBtn.FlatAppearance.BorderSize = 0;
+            nextBtn.FlatStyle = FlatStyle.Flat;
             nextBtn.Font = new Font("Arial", 12.25F);
+            nextBtn.ForeColor = Color.White;
             nextBtn.Location = new Point(495, 212);
             nextBtn.Name = "nextBtn";
             nextBtn.Size = new Size(90, 30);
@@ -99,7 +106,9 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label4.ForeColor = Color.White;
             label4.Location = new Point(295, 121);
             label4.Name = "label4";
             label4.Size = new Size(68, 16);
@@ -109,7 +118,9 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label5.ForeColor = Color.White;
             label5.Location = new Point(295, 76);
             label5.Name = "label5";
             label5.Size = new Size(71, 16);
@@ -143,7 +154,9 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label6.ForeColor = Color.White;
             label6.Location = new Point(12, 75);
             label6.Name = "label6";
             label6.Size = new Size(75, 16);
@@ -153,7 +166,9 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
             label7.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
             label7.Location = new Point(12, 124);
             label7.Name = "label7";
             label7.Size = new Size(74, 16);
@@ -171,7 +186,9 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Arial", 9.25F, FontStyle.Bold);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(26, 218);
             label3.Name = "label3";
             label3.Size = new Size(36, 16);
@@ -189,7 +206,9 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 20F);
+            label8.ForeColor = Color.White;
             label8.Location = new Point(242, 9);
             label8.Name = "label8";
             label8.Size = new Size(111, 37);
@@ -198,7 +217,10 @@
             // 
             // backBtn
             // 
+            backBtn.FlatAppearance.BorderSize = 0;
+            backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.Font = new Font("Arial", 12.25F);
+            backBtn.ForeColor = Color.White;
             backBtn.Location = new Point(321, 212);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(90, 30);
@@ -211,6 +233,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.bkg;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(611, 269);
             Controls.Add(backBtn);
             Controls.Add(label8);
@@ -229,6 +253,7 @@
             Controls.Add(password_txt);
             Controls.Add(username_txt);
             Controls.Add(nextBtn);
+            DoubleBuffered = true;
             Name = "SignUp";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SignUp";

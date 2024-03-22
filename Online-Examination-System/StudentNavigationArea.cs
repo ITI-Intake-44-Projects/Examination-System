@@ -15,7 +15,6 @@ namespace Online_Examination_System
     {
 
         private Form activeForm;
-
         Student student;
         OnlineExaminatonSystemContext db;
         public StudentNavigationArea(Student _student, OnlineExaminatonSystemContext _db)
@@ -23,16 +22,21 @@ namespace Online_Examination_System
             InitializeComponent();
             student = _student;
             db = _db;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.AutoSize = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.HorizontalScroll.Enabled = false;
+
         }
 
 
 
-        private void OpenChildForm(Form childForm) // , object btnSender
+        private void OpenChildForm(Form childForm)
         {
             if (activeForm != null)
                 activeForm.Close();
 
-            //ActivateButton(btnSender);
 
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -62,13 +66,33 @@ namespace Online_Examination_System
             OpenChildForm(new PreviousExams(student, db));
         }
 
-        private void requestExamBtn_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new RequestExam(student, db));
 
+     
+
+        private void StudentNavigationArea_Load(object sender, EventArgs e)
+        {
+            var courses = db.Courses.ToList();
+            courses_box.DataSource = courses;
+            courses_box.DisplayMember = "Name";
+            courses_box.ValueMember = "Crs_ID";
         }
 
-        private void logoutBtn_Click(object sender, EventArgs e)
+        private void requestExamBtn_Click_1(object sender, EventArgs e)
+        {
+            int crs_id = (int)courses_box.SelectedValue;
+            var exam = db.StudentCourseExam.Where(ex => ex.Crs_Id == crs_id && ex.St_Id == student.St_Id).FirstOrDefault();
+            if (exam != null)
+            {
+                MessageBox.Show("You have been already examined in this course", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                OpenChildForm(new Exam(student, db, db.Courses.Where(c => c.Crs_ID == crs_id).FirstOrDefault()));
+            }
+        }
+
+        private void logoutBtn_Click_1(object sender, EventArgs e)
         {
             Login signUp = new Login();
             this.Hide();

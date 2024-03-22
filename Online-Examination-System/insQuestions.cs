@@ -23,12 +23,10 @@ namespace Online_Examination_System
             instructor = _instructor;
             loadDropDownListData();
         }
-
-
         public void loadDropDownListData()
         {
             int instructorId = instructor.Ins_ID;
-
+            var QuestionType = new List<string> { "mcq", "tf" };
             var courseIds = db.Instructor_Course
                 .Where(ic => ic.InstructorId == instructorId)
                 .Select(ic => ic.CourseId)
@@ -50,6 +48,9 @@ namespace Online_Examination_System
             comboBox1.DisplayMember = "Name";
             comboBox1.ValueMember = "Crs_ID";
             comboBox1.DataSource = relatedCourses;
+
+            ques_type.DataSource = QuestionType;
+
         }
         private void btn_back_Click(object sender, EventArgs e)
         {
@@ -95,8 +96,9 @@ namespace Online_Examination_System
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
                 //populate the textbox from specific value of the coordinates of column and row.
                 txt_name.Text = row.Cells[1].Value.ToString();
-                txt_type.Text = row.Cells[2].Value.ToString();
-                txt_marks.Text = row.Cells[3].Value.ToString();
+                //txt_type.Text = row.Cells[2].Value.ToString();
+                ques_type.Text = row.Cells[2].Value.ToString();
+                //txt_marks.Text = row.Cells[3].Value.ToString();
                 txt_answer.Text = row.Cells[4].Value.ToString();
 
             }
@@ -105,17 +107,18 @@ namespace Online_Examination_System
         private void button4_Click(object sender, EventArgs e)
         {
             txt_name.Text = "";
-            txt_type.Text = "";
-            txt_marks.Text = "";
+            //txt_type.Text = "";
+            //txt_marks.Text = "";
             txt_answer.Text = "";
         }
 
         private void insertBtn_Click(object sender, EventArgs e)
         {
             Question q = new Question();
-            q.Marks = Convert.ToInt16(txt_marks.Text);
+            q.Marks = 10;
             q.Name = txt_name.Text;
-            q.type = txt_type.Text;
+            //q.type = txt_type.Text;
+            q.type = ques_type.SelectedValue.ToString();
             q.ModelAns = txt_answer.Text;
 
             var selectedCourse = (dynamic)comboBox1.SelectedItem;
@@ -131,8 +134,8 @@ namespace Online_Examination_System
             loadQuestionsById(courseId);
 
             txt_name.Text = "";
-            txt_type.Text = "";
-            txt_marks.Text = "";
+            //txt_type.Text = "";
+            ques_type.Text = "";
             txt_answer.Text = "";
         }
 
@@ -157,8 +160,8 @@ namespace Online_Examination_System
 
                     loadQuestionsById(courseId);
                     txt_name.Text = "";
-                    txt_type.Text = "";
-                    txt_marks.Text = "";
+                    //txt_type.Text = "";
+                    ques_type.Text = "";
                     txt_answer.Text = "";
                 }
                 else
@@ -183,8 +186,9 @@ namespace Online_Examination_System
                 {
                     // Update the question properties with values from your textboxes or other input controls
                     questionToUpdate.Name = txt_name.Text;
-                    questionToUpdate.type = txt_type.Text;
-                    questionToUpdate.Marks = int.Parse(txt_marks.Text);
+                    //questionToUpdate.type = txt_type.Text;
+                    questionToUpdate.type = ques_type.Text;
+                    questionToUpdate.Marks = 10;
                     questionToUpdate.ModelAns = txt_answer.Text;
 
                     db.SaveChanges();
@@ -197,8 +201,8 @@ namespace Online_Examination_System
 
                     // Clear the textboxes after updating
                     txt_name.Text = "";
-                    txt_type.Text = "";
-                    txt_marks.Text = "";
+                    //txt_type.Text = "";
+                    ques_type.Text = "";
                     txt_answer.Text = "";
                 }
                 else

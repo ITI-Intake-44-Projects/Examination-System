@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>1.10417in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Topics Names</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Topic_Name">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Topic_Name.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Topic_Name</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet2</DataSetName>
+        <Top>0.69584in</Top>
+        <Left>1.25in</Left>
+        <Height>0.5in</Height>
+        <Width>1.10417in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>2in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox9">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Course Topics</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox9</rd:DefaultName>
+          <Top>0.42916in</Top>
+          <Left>1.54167in</Left>
+          <Height>0.25in</Height>
+          <Width>2.70833in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSet1">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>d82a7813-313a-43f2-9698-576d715ae7eb</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet2">
+      <Query>
+        <DataSourceName>DataSet1</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Topic_Name">
+          <DataField>Topic_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:SchemaPath>E:\ITI 9m\ADV SQLSERVER\Project\FinalProjectV2\Online-Examination-System\DataSet1.xsd</rd:SchemaPath>
+        <rd:TableName>GetCourseTopics</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>GetCourseTopicsTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>54806f26-387f-45f6-8792-226374f8958e</rd:ReportID>
+</Report>

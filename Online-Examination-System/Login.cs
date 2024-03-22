@@ -37,10 +37,11 @@ namespace Online_Examination_System
                     {
                         MessageBox.Show($"Welcome back {instructor.Username} :)", "Login done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         username_txt.Text = password_txt.Text = "";
-                        instructorDashboard instructorDashboard = new instructorDashboard(instructor, db);
+                        //instructorDashboard instructorDashboard = new instructorDashboard(instructor, db);
+                        InstructorNavigationArea instructorNavigationArea = new InstructorNavigationArea(instructor, db);
                         this.Hide();
-                        instructorDashboard.FormClosed += (obj, args) => this.Close(); ;
-                        instructorDashboard.Show();
+                        instructorNavigationArea.FormClosed += (obj, args) => this.Close(); ;
+                        instructorNavigationArea.Show();
                     }
                     else
                     {
@@ -63,10 +64,10 @@ namespace Online_Examination_System
                     {
                         MessageBox.Show($"Welcome back {supervisor.TrackSupervisor.Username} :)", "Login done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         username_txt.Text = password_txt.Text = "";
-                        ViewReports ViewReports = new ViewReports();
+                        var SuperVisorNavigationArea = new SuperVisorNavigationArea(supervisor.TrackSupervisor,db);
                         this.Hide();
-                        ViewReports.FormClosed += (obj, args) => this.Close(); ;
-                        ViewReports.Show();
+                        SuperVisorNavigationArea.FormClosed += (obj, args) => this.Close(); ;
+                        SuperVisorNavigationArea.Show();
                     }
                     else
                     {
