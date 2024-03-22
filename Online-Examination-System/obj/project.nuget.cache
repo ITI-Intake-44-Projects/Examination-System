@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vd3VoHvKHHShPgqhz4C+ivoShwBN+U4Yr7WNwLfGyDRDUTqZhSrd1KNUTqptbk/MFYMv0xPGNWD5CEvPKW2OWQ==",
+  "dgSpecHash": "vJIj5A2f4CMtCEmX79hsdCypUUD1MR0fyO+eXM11WQyuD6OoxML18lpwb5o4DLLC2K8O4OiW9vcL9zNn637yng==",
   "success": true,
   "projectFilePath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
   "expectedPackageFiles": [
@@ -96,12 +96,6 @@
     "C:\\Users\\Men3m\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'expectedPackageFiles', line 98, position 0."
-    },
     {
       "code": "NU1608",
       "level": "Warning",
