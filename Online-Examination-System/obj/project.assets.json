@@ -5274,11 +5274,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
+      "projectUniqueName": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\Online-Examination-System.csproj",
       "projectName": "Online-Examination-System",
-      "projectPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\Online-Examination-System.csproj",
+      "projectPath": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\Online-Examination-System.csproj",
       "packagesPath": "C:\\Users\\Men3m\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\obj\\",
+      "outputPath": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Men3m\\AppData\\Roaming\\NuGet\\NuGet.Config",

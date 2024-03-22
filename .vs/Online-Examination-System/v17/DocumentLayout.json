@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\",
+  "WorkspaceRootPath": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|D:\\ITI\\Projects\\Advanced-SQL\\workspace\\online-examination-system\\studentnavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\studentnavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\insprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\insprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\workspace\\online-examination-system\\studentnavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\studentnavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\instructornavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\instructornavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\insprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\insprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\instructornavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\instructornavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 280,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,27 +50,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentNavigationArea.cs",
-              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\StudentNavigationArea.cs",
-              "RelativeDocumentMoniker": "Online-Examination-System\\StudentNavigationArea.cs",
-              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\StudentNavigationArea.cs",
-              "RelativeToolTip": "Online-Examination-System\\StudentNavigationArea.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAwwEMAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "insProfile.cs",
+              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\insProfile.cs",
+              "RelativeDocumentMoniker": "Online-Examination-System\\insProfile.cs",
+              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\insProfile.cs",
+              "RelativeToolTip": "Online-Examination-System\\insProfile.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAUwDAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T19:57:07.906Z",
+              "WhenOpened": "2024-03-22T19:47:23.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentNavigationArea.cs [Design]",
-              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\StudentNavigationArea.cs",
-              "RelativeDocumentMoniker": "Online-Examination-System\\StudentNavigationArea.cs",
-              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\workspace\\Online-Examination-System\\StudentNavigationArea.cs [Design]",
-              "RelativeToolTip": "Online-Examination-System\\StudentNavigationArea.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "insProfile.cs [Design]",
+              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\insProfile.cs",
+              "RelativeDocumentMoniker": "Online-Examination-System\\insProfile.cs",
+              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\insProfile.cs [Design]",
+              "RelativeToolTip": "Online-Examination-System\\insProfile.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T19:55:01.393Z",
+              "WhenOpened": "2024-03-22T19:45:56.82Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InstructorNavigationArea.cs",
+              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\InstructorNavigationArea.cs",
+              "RelativeDocumentMoniker": "Online-Examination-System\\InstructorNavigationArea.cs",
+              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\InstructorNavigationArea.cs",
+              "RelativeToolTip": "Online-Examination-System\\InstructorNavigationArea.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAApwDIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T19:45:46.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InstructorNavigationArea.cs [Design]",
+              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\InstructorNavigationArea.cs",
+              "RelativeDocumentMoniker": "Online-Examination-System\\InstructorNavigationArea.cs",
+              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\InstructorNavigationArea.cs [Design]",
+              "RelativeToolTip": "Online-Examination-System\\InstructorNavigationArea.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T19:45:44.151Z",
               "EditorCaption": " [Design]"
             }
           ]
