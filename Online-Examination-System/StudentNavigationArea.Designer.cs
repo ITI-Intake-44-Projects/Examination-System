@@ -73,14 +73,13 @@
             // 
             // courses_box
             // 
-            courses_box.BackColor = Color.White;
-            courses_box.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            courses_box.BackColor = Color.Lavender;
+            courses_box.Font = new Font("Segoe UI", 9.5F);
             courses_box.FormattingEnabled = true;
-            courses_box.Location = new Point(100, 245);
+            courses_box.Location = new Point(101, 245);
             courses_box.Name = "courses_box";
-            courses_box.Size = new Size(114, 21);
+            courses_box.Size = new Size(113, 25);
             courses_box.TabIndex = 9;
-            courses_box.Text = "  Choose Course";
             // 
             // logoutBtn
             // 
@@ -159,8 +158,9 @@
             // 
             // panelDesktopPanel
             // 
-            panelDesktopPanel.BackColor = Color.FromArgb(51, 51, 76);
+            panelDesktopPanel.BackColor = Color.Lavender;
             panelDesktopPanel.Dock = DockStyle.Fill;
+            panelDesktopPanel.Font = new Font("Segoe UI", 10F);
             panelDesktopPanel.Location = new Point(220, 0);
             panelDesktopPanel.Name = "panelDesktopPanel";
             panelDesktopPanel.Size = new Size(916, 585);
@@ -173,6 +173,7 @@
             ClientSize = new Size(1136, 585);
             Controls.Add(panelDesktopPanel);
             Controls.Add(panel1);
+            MinimizeBox = false;
             Name = "StudentNavigationArea";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "StudentNavigationArea";

@@ -26,7 +26,6 @@ namespace Online_Examination_System.Models
         public string? Address { get; set; }
 
         [StringLength(50)]
-
         public string? Mobile { get; set; }
 
         [StringLength(50)]
@@ -41,18 +40,15 @@ namespace Online_Examination_System.Models
         [StringLength(20)]
         public string Passowrd { get; set; }
 
+        // conflict with stored procedure !!  => examGeneration
+        //[RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", ErrorMessage = "Please enter a valid email address.")]
+        //public string? Email { get; set; }
+
         [ForeignKey("Track")]
         public int TrackId {  get; set; }
 
         public virtual Track Track { get; set; }
-
-
         public virtual List<StudentExamQuestion> Exam_Ques_St { get; set; } = new List<StudentExamQuestion>();
-
         public virtual List<StudentCourseExam> StudentCourseExam { get; set; } = new List<StudentCourseExam>();
-
-
-
-
     }
 }

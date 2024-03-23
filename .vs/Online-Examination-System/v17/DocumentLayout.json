@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\insprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\insprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\change_password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\change_password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\instructornavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\instructornavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\insprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\insprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\instructornavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\instructornavigationarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|d:\\iti\\projects\\advanced-sql\\code-first\\online-examination-system\\change_password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{382AFFE6-D001-4918-9FA4-E68E19E141BF}|Online-Examination-System\\Online-Examination-System.csproj|solutionrelative:online-examination-system\\change_password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +18,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 280,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Change_Password.cs [Design]",
+              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\Change_Password.cs",
+              "RelativeDocumentMoniker": "Online-Examination-System\\Change_Password.cs",
+              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\Change_Password.cs [Design]",
+              "RelativeToolTip": "Online-Examination-System\\Change_Password.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T03:57:25.057Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -51,52 +55,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "insProfile.cs",
-              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\insProfile.cs",
-              "RelativeDocumentMoniker": "Online-Examination-System\\insProfile.cs",
-              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\insProfile.cs",
-              "RelativeToolTip": "Online-Examination-System\\insProfile.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAUwDAAAAAQAAAA",
+              "Title": "Change_Password.cs",
+              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\Change_Password.cs",
+              "RelativeDocumentMoniker": "Online-Examination-System\\Change_Password.cs",
+              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\Change_Password.cs",
+              "RelativeToolTip": "Online-Examination-System\\Change_Password.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T19:47:23.178Z",
+              "WhenOpened": "2024-03-23T03:51:02.313Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "insProfile.cs [Design]",
-              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\insProfile.cs",
-              "RelativeDocumentMoniker": "Online-Examination-System\\insProfile.cs",
-              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\insProfile.cs [Design]",
-              "RelativeToolTip": "Online-Examination-System\\insProfile.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T19:45:56.82Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InstructorNavigationArea.cs",
-              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\InstructorNavigationArea.cs",
-              "RelativeDocumentMoniker": "Online-Examination-System\\InstructorNavigationArea.cs",
-              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\InstructorNavigationArea.cs",
-              "RelativeToolTip": "Online-Examination-System\\InstructorNavigationArea.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAApwDIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T19:45:46.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InstructorNavigationArea.cs [Design]",
-              "DocumentMoniker": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\InstructorNavigationArea.cs",
-              "RelativeDocumentMoniker": "Online-Examination-System\\InstructorNavigationArea.cs",
-              "ToolTip": "D:\\ITI\\Projects\\Advanced-SQL\\Code-First\\Online-Examination-System\\InstructorNavigationArea.cs [Design]",
-              "RelativeToolTip": "Online-Examination-System\\InstructorNavigationArea.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T19:45:44.151Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

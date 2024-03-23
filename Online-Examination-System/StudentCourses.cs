@@ -21,6 +21,7 @@ namespace Online_Examination_System
             InitializeComponent();
             student = _student;
             db = _db;
+            this.MinimizeBox = true;
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
@@ -33,12 +34,16 @@ namespace Online_Examination_System
 
         private void StudentCourses_Load(object sender, EventArgs e)
         {
-            var courses = db.Courses.Select(c => new { 
-                c.Name, c.Duration, 
+            var courses = db.Courses.Select(c => new
+            {
+                c.Name,
+                c.Duration,
                 Instructors = string.Join(", ", c.Instructor_Courses.Select(ic => $"{ic.Instructor.FName} {ic.Instructor.LName}"))
             }).ToList();
 
             coursesDgv.DataSource = courses;
         }
+        
+        private void coursesDgv_CellContentClick(object sender, DataGridViewCellEventArgs e){}
     }
 }

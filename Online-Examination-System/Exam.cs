@@ -89,12 +89,10 @@ namespace Online_Examination_System
                 if (pass.Passed == 1)
                 {
                     result = MessageBox.Show($"Congratulations you have passed the exam with grade {pass.Grade} ", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 }
                 else
                 {
                     result = MessageBox.Show($"Sorry you have failed on the exam with grade {pass.Grade} ", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 }
 
                 if (result == DialogResult.OK)
@@ -136,7 +134,7 @@ namespace Online_Examination_System
 
                 Label l1 = new Label();
                 l1.Text = $"Q{count++}-{q.Ques.Name}";
-                l1.ForeColor = Color.White;
+                l1.ForeColor = Color.Black;
                 l1.Size = new System.Drawing.Size(500, 20);
                 groupBox1.Controls.Add(l1);
 
@@ -148,7 +146,7 @@ namespace Online_Examination_System
                     c1.Location = new System.Drawing.Point(50, radioButtonY);
                     c1.Size = new System.Drawing.Size(700, 20);
                     c1.Text = c.Choice;
-                    c1.ForeColor= Color.White;
+                    c1.ForeColor= Color.Black;
                     groupBox1.Controls.Add(c1);
                     radioButtonY += 40;
                 }
@@ -163,7 +161,7 @@ namespace Online_Examination_System
 
             Button submit = new Button();
             submit.Size = new System.Drawing.Size(175, 45);
-            
+            submit.Font = new Font(submit.Font.FontFamily, 22);
             submit.Text = "Sumbit";
             submit.Click += submit_Click;
             submit.BackColor= Color.FromArgb(92, 184, 92);
@@ -187,6 +185,7 @@ namespace Online_Examination_System
             timeLabel.Location = new System.Drawing.Point(this.Width-555, 20); // Set the position
             this.Controls.Add(timeLabel);
         }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
 

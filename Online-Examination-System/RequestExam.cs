@@ -20,6 +20,12 @@ namespace Online_Examination_System
             InitializeComponent();
             db = _db;
             student = _student;
+            this.BackColor = Color.Lavender;
+        }
+
+        private void RequestExam_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

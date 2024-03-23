@@ -23,11 +23,10 @@ namespace Online_Examination_System
             student = _student;
             db = _db;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.MinimizeBox = true;
             this.AutoSize = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.HorizontalScroll.Enabled = false;
-
         }
 
 
@@ -66,9 +65,6 @@ namespace Online_Examination_System
             OpenChildForm(new PreviousExams(student, db));
         }
 
-
-     
-
         private void StudentNavigationArea_Load(object sender, EventArgs e)
         {
             var courses = db.Courses.ToList();
@@ -84,10 +80,7 @@ namespace Online_Examination_System
             if (exam != null)
             {
                 MessageBox.Show("You have been already examined in this course", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            }
-            else
-            {
+            } else {
                 OpenChildForm(new Exam(student, db, db.Courses.Where(c => c.Crs_ID == crs_id).FirstOrDefault()));
             }
         }

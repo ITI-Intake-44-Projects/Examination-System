@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(51, 51, 76);
+            BackColor = Color.Lavender;
             ClientSize = new Size(882, 565);
             Name = "PreviousExams";
             Text = "PreviousExams";

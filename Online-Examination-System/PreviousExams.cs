@@ -32,6 +32,7 @@ namespace Online_Examination_System
             foreach (var exam in exams) 
             {
                 Panel p = new Panel();
+                p.ForeColor = Color.Black;
                 p.Location = new System.Drawing.Point(x, y);
                 p.AutoSize = true;
                 Controls.Add(p);
@@ -42,15 +43,13 @@ namespace Online_Examination_System
                 CourseName.AutoSize = true;
                 CourseName.Text = $"Course: {exam.Course.Name}        Grade: {exam.Grade.ToString()}        Status:{passed}";
                 CourseName.Font = new Font("Arial", 20);
-                CourseName.ForeColor = Color.White;
+
+                CourseName.ForeColor = (exam.Passed == 1 ? Color.Green: Color.Red);
                 //CourseName.Location = new Point(10, 10);
                 p.Controls.Add(CourseName);
 
                 y += p.Height;
             }
-
         }
-
-
     }
 }
