@@ -147,6 +147,7 @@
             // 
             // panel3
             // 
+            panel3.BackColor = Color.Lavender;
             panel3.Location = new Point(235, 12);
             panel3.Name = "panel3";
             panel3.Size = new Size(968, 561);

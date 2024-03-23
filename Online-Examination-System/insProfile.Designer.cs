@@ -46,7 +46,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(261, 87);
             label1.Name = "label1";
             label1.Size = new Size(58, 29);
@@ -57,7 +57,7 @@
             // 
             lbl_insID.AutoSize = true;
             lbl_insID.Font = new Font("Arial", 14F, FontStyle.Bold);
-            lbl_insID.ForeColor = Color.White;
+            lbl_insID.ForeColor = Color.Black;
             lbl_insID.Location = new Point(552, 92);
             lbl_insID.Name = "lbl_insID";
             lbl_insID.Size = new Size(57, 22);
@@ -68,7 +68,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 18F, FontStyle.Bold);
-            label2.ForeColor = Color.White;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(261, 126);
             label2.Name = "label2";
             label2.Size = new Size(157, 29);
@@ -77,10 +77,10 @@
             // 
             // txt_fname
             // 
-            txt_fname.BackColor = Color.FromArgb(51, 51, 76);
+            txt_fname.BackColor = Color.Lavender;
             txt_fname.BorderStyle = BorderStyle.None;
             txt_fname.Font = new Font("Arial", 14F, FontStyle.Bold);
-            txt_fname.ForeColor = Color.White;
+            txt_fname.ForeColor = Color.Black;
             txt_fname.Location = new Point(479, 133);
             txt_fname.Name = "txt_fname";
             txt_fname.ReadOnly = true;
@@ -90,10 +90,10 @@
             // 
             // txt_lname
             // 
-            txt_lname.BackColor = Color.FromArgb(51, 51, 76);
+            txt_lname.BackColor = Color.Lavender;
             txt_lname.BorderStyle = BorderStyle.None;
             txt_lname.Font = new Font("Arial", 14F, FontStyle.Bold);
-            txt_lname.ForeColor = Color.White;
+            txt_lname.ForeColor = Color.Black;
             txt_lname.Location = new Point(479, 170);
             txt_lname.Name = "txt_lname";
             txt_lname.ReadOnly = true;
@@ -106,7 +106,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 18F, FontStyle.Bold);
-            label3.ForeColor = Color.White;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(261, 165);
             label3.Name = "label3";
             label3.Size = new Size(147, 29);
@@ -115,10 +115,10 @@
             // 
             // txt_addr
             // 
-            txt_addr.BackColor = Color.FromArgb(51, 51, 76);
+            txt_addr.BackColor = Color.Lavender;
             txt_addr.BorderStyle = BorderStyle.None;
             txt_addr.Font = new Font("Arial", 14F, FontStyle.Bold);
-            txt_addr.ForeColor = Color.White;
+            txt_addr.ForeColor = Color.Black;
             txt_addr.Location = new Point(479, 208);
             txt_addr.Name = "txt_addr";
             txt_addr.ReadOnly = true;
@@ -130,7 +130,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 18F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(261, 201);
             label4.Name = "label4";
             label4.Size = new Size(122, 29);
@@ -139,10 +139,10 @@
             // 
             // txt_whours
             // 
-            txt_whours.BackColor = Color.FromArgb(51, 51, 76);
+            txt_whours.BackColor = Color.Lavender;
             txt_whours.BorderStyle = BorderStyle.None;
             txt_whours.Font = new Font("Arial", 14F, FontStyle.Bold);
-            txt_whours.ForeColor = Color.White;
+            txt_whours.ForeColor = Color.Black;
             txt_whours.Location = new Point(479, 247);
             txt_whours.Name = "txt_whours";
             txt_whours.ReadOnly = true;
@@ -154,7 +154,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 18F, FontStyle.Bold);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(261, 240);
             label5.Name = "label5";
             label5.Size = new Size(200, 29);
@@ -163,10 +163,10 @@
             // 
             // txt_birth
             // 
-            txt_birth.BackColor = Color.FromArgb(51, 51, 76);
+            txt_birth.BackColor = Color.Lavender;
             txt_birth.BorderStyle = BorderStyle.None;
             txt_birth.Font = new Font("Arial", 14F, FontStyle.Bold);
-            txt_birth.ForeColor = Color.White;
+            txt_birth.ForeColor = Color.Black;
             txt_birth.Location = new Point(479, 291);
             txt_birth.Name = "txt_birth";
             txt_birth.ReadOnly = true;
@@ -178,7 +178,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 18F, FontStyle.Bold);
-            label6.ForeColor = Color.White;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(261, 286);
             label6.Name = "label6";
             label6.Size = new Size(134, 29);
@@ -189,8 +189,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(51, 51, 76);
-            ClientSize = new Size(952, 521);
+            BackColor = Color.Lavender;
+            ClientSize = new Size(876, 521);
             Controls.Add(txt_birth);
             Controls.Add(label6);
             Controls.Add(txt_whours);

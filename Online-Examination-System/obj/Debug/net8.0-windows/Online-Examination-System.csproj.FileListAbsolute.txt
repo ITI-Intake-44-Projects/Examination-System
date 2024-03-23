@@ -736,3 +736,4 @@ D:\ITI\Projects\Advanced-SQL\Code-First\Online-Examination-System\obj\Debug\net8
 D:\ITI\Projects\Advanced-SQL\Code-First\Online-Examination-System\obj\Debug\net8.0-windows\Online-Examination-System.genruntimeconfig.cache
 D:\ITI\Projects\Advanced-SQL\Code-First\Online-Examination-System\obj\Debug\net8.0-windows\ref\Online-Examination-System.dll
 D:\ITI\Projects\Advanced-SQL\Code-First\Online-Examination-System\obj\Debug\net8.0-windows\Code_First.Change_Password.resources
+D:\ITI\Projects\Advanced-SQL\Code-First\Online-Examination-System\obj\Debug\net8.0-windows\Online_Examination_System.instructorProfile.resources

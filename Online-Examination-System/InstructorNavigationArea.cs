@@ -48,7 +48,7 @@ namespace Online_Examination_System
 
         private void ProfileBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new insProfile(instructor, db));
+            OpenChildForm(new instructorProfile(instructor, db));
         }
 
         private void coursesBtn_Click(object sender, EventArgs e)
